@@ -21,7 +21,7 @@ export const aboutData = {
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: 'http://www.scoutcurry.com/static/images/Scout%20Curry%20Resume.pdf', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -29,33 +29,33 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project.png',
-    title: '',
+    title: 'JS Unscramble',
     info: '',
     info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.png',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.png',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
+    url: 'https://serene-garden-81705.herokuapp.com/#',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
     img: 'project1.png',
+    title: 'ZenRent: Reviews',
+    info: '',
+    info2: '',
+    url: 'https://www.youtube.com/watch?v=PdbfBXb6QXw',
+    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'project1.png',
+    title: '',
+    info: '',
+    info2: '',
+    url: '',
+    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    // img: 'project1hd.gif',
     title: '',
     info: '',
     info2: '',

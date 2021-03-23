@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 import GithubButtons from '../GithubButtons/GithubButtons';
+// import testGif from './project1hd.gif';
 
 import { githubButtons } from '../../mock/data';
 
@@ -13,6 +14,9 @@ const Footer = () => {
 
   return (
     <footer className="footer navbar-static-bottom">
+      {/* <div>
+        <img src={testGif} alt="JS Unscramble live demo" />
+      </div> */}
       <Container>
         <span className="back-to-top">
           <Link to="hero" smooth duration={1000}>

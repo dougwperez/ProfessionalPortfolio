@@ -4,6 +4,11 @@
   margin-top: -15rem;
   padding-top: 15rem;
 
+  .animated-gif {
+    width: 720px;
+    height: auto;
+  }
+
   @include respond(tab-land) {
     margin-top: 0;
     padding-top: 5rem;
