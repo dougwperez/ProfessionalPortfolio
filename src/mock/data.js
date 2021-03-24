@@ -21,7 +21,7 @@ export const aboutData = {
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
-  resume: 'http://www.scoutcurry.com/static/images/Scout%20Curry%20Resume.pdf', // if no resume, the button will not show up
+  resume: 'https://dougwperez.github.io/Doug-Perez-Resume/', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -47,19 +47,28 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project1.png',
-    title: '',
+    title: 'ESL MiniGames',
     info: '',
     info2: '',
-    url: '',
+    url: 'https://dougwperez.github.io/ESL-MiniGames/',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    // img: 'project1hd.gif',
-    title: '',
+    img: 'project1.png',
+    title: 'Alex4Hope Organization',
     info: '',
     info2: '',
-    url: '',
+    url: 'https://dougwperez.github.io/ESL-MiniGames/',
+    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'project1.png',
+    title: 'BrightStack.io',
+    info: '',
+    info2: '',
+    url: 'https://www.youtube.com/watch?v=YjxJDCq-xew&t=1s',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
 ];

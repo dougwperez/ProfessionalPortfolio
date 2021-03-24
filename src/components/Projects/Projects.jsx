@@ -27,6 +27,14 @@ const Projects = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
+          <button
+            className="cta-btn cta-btn--hero"
+            rel="noopener noreferrer"
+            id="tech-dropdown-btn"
+          >
+            Filter by Technology =>{' '}
+          </button>
+
           {projects.map((project) => {
             const { title, info, info2, url, repo, img, id } = project;
 
