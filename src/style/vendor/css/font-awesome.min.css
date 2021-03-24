@@ -628,6 +628,11 @@
 .fa-github:before {
   content: '\f09b';
 }
+.fa-github1:before {
+  content: '\f09b';
+  color: black;
+  size: 50%;
+}
 .fa-unlock:before {
   content: '\f09c';
 }
@@ -797,6 +802,10 @@
 }
 .fa-linkedin:before {
   content: '\f0e1';
+}
+.fa-linkedin1:before {
+  content: '\f0e1';
+  color: black;
 }
 .fa-rotate-left:before,
 .fa-undo:before {

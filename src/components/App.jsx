@@ -4,6 +4,7 @@ import About from './About/About';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
+import GithubButtons from './GithubButtons/GithubButtons';
 
 import { PortfolioProvider } from '../context/context';
 
@@ -29,7 +30,7 @@ function App() {
       <header className="navbar-fixed-top cbp-af-header" className="sticky-header-glass">
         <nav>
           <ul className="sticky-menu-options">
-            <li
+            {/* <li
               class="cta-btn text-color-black"
               onClick={(event) => window.open('https://www.linkedin.com/in/doug-perez/')}
             >
@@ -41,13 +42,35 @@ function App() {
               onClick={(event) => window.open('https://github.com/dougwperez')}
             >
               GitHub
+            </li> */}
+            <li>
+              <a
+                href={'https://www.linkedin.com/in/doug-perez/'}
+                rel="noopener noreferrer"
+                target="_blank"
+                color="green"
+              >
+                <i className={`fa fa-${name || 'linkedin1 fa-2x'} fa-inverse`} />
+              </a>
+            </li>
+            <li>
+              <a
+                href={'https://github.com/dougwperez'}
+                rel="noopener noreferrer"
+                target="_blank"
+                color="green"
+              >
+                <i className={`fa fa-${name || 'github1 fa-2x'} fa-inverse`} />
+              </a>
             </li>
             <li>
               <button
-                class="cta-btn cta-btn--hero"
+                className="cta-btn cta-btn--hero1"
+                // id="setColor"
+                // className="test"
                 onClick={(event) => window.open('https://dougwperez.github.io/Doug-Perez-Resume/')}
               >
-                Resume
+                Download Resume
               </button>
             </li>
           </ul>

@@ -64,7 +64,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project1.png',
+    img: 'project4.png',
     title: 'BrightStack.io',
     info: '',
     info2: '',
@@ -77,7 +77,7 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'perezcpt@gmail.com',
 };
 
 // FOOTER DATA
@@ -85,23 +85,18 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
+      name: 'envelope',
+      url: 'mailto:perezcpt@gmail.com',
     },
     {
       id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/doug-perez/',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/dougwperez',
     },
   ],
 };
