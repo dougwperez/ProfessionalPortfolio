@@ -26,6 +26,34 @@ function App() {
 
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
+      <header className="navbar-fixed-top cbp-af-header" className="sticky-header-glass">
+        <nav>
+          <ul className="sticky-menu-options">
+            <li
+              class="cta-btn text-color-black"
+              onClick={(event) => window.open('https://www.linkedin.com/in/doug-perez/')}
+            >
+              {' '}
+              Linked In
+            </li>
+            <li
+              class="cta-btn text-color-black"
+              onClick={(event) => window.open('https://github.com/dougwperez')}
+            >
+              GitHub
+            </li>
+            <li>
+              <button
+                class="cta-btn cta-btn--hero"
+                onClick={(event) => window.open('https://dougwperez.github.io/Doug-Perez-Resume/')}
+              >
+                Resume
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
       <Hero />
       <About />
       <Projects />

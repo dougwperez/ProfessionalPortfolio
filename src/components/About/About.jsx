@@ -26,6 +26,7 @@ const About = () => {
     <section id="about">
       <Container>
         <Title title="About Doug" />
+
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
