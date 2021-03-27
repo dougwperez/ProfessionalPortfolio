@@ -26,8 +26,10 @@ const Projects = () => {
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="Selected Projects" />
-          <div class="glass">
+          <Title title="Projects" />
+          <br />
+          <br />
+          {/* <div class="glass">
             <button
               className="cta-btn cta-btn--hero"
               rel="noopener noreferrer"
@@ -35,7 +37,7 @@ const Projects = () => {
             >
               Filter by Technology >{' '}
             </button>
-          </div>
+          </div> */}
 
           {projects.map((project) => {
             const { title, info, info2, url, repo, img, id } = project;

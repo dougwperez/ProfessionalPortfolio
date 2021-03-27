@@ -2,22 +2,22 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
+  title: 'Doug Perez | Front End Developer', // e.g: 'Name | Developer'
+  lang: 'en', // e.g: en, es, fr, jp
   description: '', // e.g: Welcome to my website
 };
 
 // HERO DATA
 export const heroData = {
   title: 'Front End Engineer',
-  name: 'Doug Perez',
+  name: 'Doug Perez,',
   subtitle: '',
   cta: '',
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
+  img: 'profile1.jpg',
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
@@ -46,7 +46,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project1.png',
+    img: 'project2.png',
     title: 'ESL MiniGames',
     info: '',
     info2: '',
@@ -55,7 +55,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project1.png',
+    img: 'project3.png',
     title: 'Alex4Hope Organization',
     info: '',
     info2: '',

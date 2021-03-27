@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import project1Gif from './project1hd.gif';
 import project2Gif from './project2hd.gif';
+import project3Gif from './project3hd.gif';
+// import project4Gif from './project4hd.gif';
 import { useWindowSize, useWindowWidth, useWindowHeight } from '@react-hook/window-size';
 
 const ProjectImg = ({ filename, alt }) => (
@@ -72,6 +74,47 @@ const ProjectImg = ({ filename, alt }) => (
             <img
               className="animated-gif"
               src={project2Gif}
+              alt="JS Unscramble live demo"
+              fluid={imageFluid}
+            />
+          </imgContainer>
+        );
+      }
+
+      if (filename === 'project2.png' && width > 740) {
+        return (
+          <imgContainer>
+            <img
+              className="animated-gif"
+              src={project3Gif}
+              alt="JS Unscramble live demo"
+              fluid={imageFluid}
+            />
+          </imgContainer>
+        );
+      }
+      if (filename === 'project2.png' && width < 740) {
+        return (
+          <imgContainer>
+            <Img alt={alt} fluid={imageFluid} />
+          </imgContainer>
+        );
+      }
+
+      if (filename === 'project3.png' && width < 740) {
+        return (
+          <imgContainer>
+            <Img alt={alt} fluid={imageFluid} />
+          </imgContainer>
+        );
+      }
+
+      if (filename === 'project3.png' && width > 740) {
+        return (
+          <imgContainer>
+            <img
+              className="animated-gif"
+              src={project3Gif}
               alt="JS Unscramble live demo"
               fluid={imageFluid}
             />
