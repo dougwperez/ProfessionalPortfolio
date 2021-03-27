@@ -64,7 +64,7 @@ function App() {
                 target="_blank"
                 color="green"
               >
-                <i className={`fa fa-${name || 'envelope1 fa-2x'} fa-inverse`} />
+                <i className={`fa fa-${'envelope1 fa-2x'} fa-inverse`} />
               </a>
             </li>
             <li>
@@ -74,7 +74,7 @@ function App() {
                 target="_blank"
                 color="green"
               >
-                <i className={`fa fa-${name || 'linkedin1 fa-2x'} fa-inverse`} />
+                <i className={`fa fa-${'linkedin1 fa-2x'} fa-inverse`} />
               </a>
             </li>
             <li>
@@ -84,7 +84,7 @@ function App() {
                 target="_blank"
                 color="green"
               >
-                <i className={`fa fa-${name || 'github1 fa-2x'} fa-inverse`} />
+                <i className={`fa fa-${'github1 fa-2x'} fa-inverse`} />
               </a>
             </li>
             <li>
