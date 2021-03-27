@@ -134,3 +134,28 @@
 // #setcolor .test {
 //   background-color: red;
 // }
+
+.cta-btn--resume1 {
+  color: $white-color;
+  background-color: #00c0ad;
+  border: 2px solid $white-color;
+
+  &::after {
+    background: $white-color;
+  }
+
+  &:hover {
+    color: $secondary-color;
+    cursor: pointer;
+    text-decoration: none;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+/* Arrow Button */
+.up i {
+  color: #272727;
+}

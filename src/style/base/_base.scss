@@ -95,3 +95,14 @@ li {
   margin-right: 50px;
   list-style-type: none;
 }
+
+.StickyHeaderTitle {
+  font-weight: bold;
+  color: black;
+  margin-top: 7px;
+  float: left;
+}
+
+.sticky-menu-options > *:first-child {
+  align-items: flex-start;
+}

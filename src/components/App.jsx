@@ -43,6 +43,30 @@ function App() {
             >
               GitHub
             </li> */}
+            {/* <li>
+              <span className="d-flex mt-3">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cta-btn cta-btn--resume1"
+                  // href={resume}
+                >
+                  View Resume
+                </a>
+              </span>
+            </li> */}
+            {/* <h2 className="StickyHeaderTitle"><em>Doug Perez: Software Engineer Portfolio</em></h2> */}
+
+            <li>
+              <a
+                href={'mailto:perezcpt@gmail.com'}
+                rel="noopener noreferrer"
+                target="_blank"
+                color="green"
+              >
+                <i className={`fa fa-${name || 'envelope1 fa-2x'} fa-inverse`} />
+              </a>
+            </li>
             <li>
               <a
                 href={'https://www.linkedin.com/in/doug-perez/'}
@@ -64,14 +88,15 @@ function App() {
               </a>
             </li>
             <li>
-              <button
-                className="cta-btn cta-btn--hero1"
-                // id="setColor"
-                // className="test"
+              <a
                 onClick={(event) => window.open('https://dougwperez.github.io/Doug-Perez-Resume/')}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-btn cta-btn--resume1"
+                // href={resume}
               >
                 Download Resume
-              </button>
+              </a>
             </li>
           </ul>
         </nav>

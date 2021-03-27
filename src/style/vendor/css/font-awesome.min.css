@@ -633,6 +633,11 @@
   color: black;
   size: 50%;
 }
+.fa-github1:hoover {
+  content: '\f09b';
+  color: purple;
+  size: 50%;
+}
 .fa-unlock:before {
   content: '\f09c';
 }
@@ -799,6 +804,10 @@
 }
 .fa-envelope:before {
   content: '\f0e0';
+}
+.fa-envelope1:before {
+  content: '\f0e0';
+  color: black;
 }
 .fa-linkedin:before {
   content: '\f0e1';
