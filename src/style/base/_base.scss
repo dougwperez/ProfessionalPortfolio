@@ -106,3 +106,44 @@ li {
 .sticky-menu-options > *:first-child {
   align-items: flex-start;
 }
+
+.fullTitle {
+  color: #181818;
+  font-weight: 600;
+  font-size: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 100px;
+  @media only screen and (max-width: 1040px) {
+    display: none;
+  }
+
+  // transform: translateX(1px);
+}
+
+.siteTitle {
+  padding-right: 6px;
+  padding-left: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  // background-size: contain;
+  color: white;
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 20px;
+
+  @include respond(phone) {
+    background-image: none;
+    -webkit-text-fill-color: pink;
+  }
+}
+
+.JobTitleinTitle {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 3px;
+}
