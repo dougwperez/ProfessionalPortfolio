@@ -110,10 +110,10 @@ Go to `/src/mock/data.js` and fill your information, they are 5 objects:
 
 ```javascript
 export const heroData = {
-  title: '', // Hello, my name is
-  name: '', // John
-  subtitle: '', // I'm the Unknown Developer.
-  cta: '', // Know more
+  title: 'Hello, my name is', // Hello, my name is
+  name: 'Doug Perez', // John
+  subtitle: 'I am an SF-based React Developer', // I'm the Unknown Developer.
+  cta: 'Learn More', // Know more
 };
 ```
 
