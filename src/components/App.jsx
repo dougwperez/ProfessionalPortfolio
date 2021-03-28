@@ -58,7 +58,7 @@ function App() {
             {/* <h2 className="StickyHeaderTitle"><em>Doug Perez: Software Engineer Portfolio</em></h2> */}
 
             <li className="fullTitle">
-              <span className="siteTitle">{' Doug Perez: '}</span>
+              <span className="siteTitle">{' Doug Perez : '}</span>
               <span className="JobTitleinTitle">{'Front End Developer'}</span>
             </li>
 

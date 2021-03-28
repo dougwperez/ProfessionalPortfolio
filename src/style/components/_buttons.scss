@@ -139,6 +139,8 @@
   color: $white-color;
   background-color: #00c0ad;
   border: 2px solid $white-color;
+  // padding-bottom: 1px;
+  margin-bottom: 4px;
 
   &::after {
     background: $white-color;
