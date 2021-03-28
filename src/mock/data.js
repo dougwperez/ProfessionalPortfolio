@@ -30,10 +30,10 @@ export const projectsData = [
     id: nanoid(),
     img: 'project.png',
     title: 'JS Unscramble',
-    info: '',
+    info: 'Testing',
     info2: '',
     url: 'https://serene-garden-81705.herokuapp.com/#',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/dougwperez/UnscrambleJS', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -42,7 +42,7 @@ export const projectsData = [
     info: '',
     info2: '',
     url: 'https://www.youtube.com/watch?v=PdbfBXb6QXw',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/ZenRent/Reviews', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -51,7 +51,7 @@ export const projectsData = [
     info: '',
     info2: '',
     url: 'https://dougwperez.github.io/ESL-MiniGames/',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/dougwperez/ESL-MiniGames', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -59,8 +59,8 @@ export const projectsData = [
     title: 'Alex4Hope Organization',
     info: '',
     info2: '',
-    url: 'https://dougwperez.github.io/ESL-MiniGames/',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'https://dougwperez.github.io/Movahedi-memorial/',
+    repo: 'https://github.com/dougwperez/Movahedi-memorial', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -69,7 +69,7 @@ export const projectsData = [
     info: '',
     info2: '',
     url: 'https://www.youtube.com/watch?v=YjxJDCq-xew&t=1s',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/britestack/photo-gallery', // if no repo, the button will not show up
   },
 ];
 
