@@ -123,7 +123,7 @@ export const heroData = {
 
 ```javascript
 export const aboutData = {
-  img: 'profile.jpg', // put your profile image (recommended aspect radio: square)
+  img: 'profile1.jpg', // put your profile image (recommended aspect radio: square)
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
