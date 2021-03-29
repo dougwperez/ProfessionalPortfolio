@@ -5,10 +5,12 @@ import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import GithubButtons from './GithubButtons/GithubButtons';
+import { useWindowSize, useWindowWidth, useWindowHeight } from '@react-hook/window-size';
 
 import { PortfolioProvider } from '../context/context';
 
 import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
+console.log('window.innerWidth', window.innerWidth);
 
 function App() {
   const [hero, setHero] = useState({});
@@ -16,6 +18,9 @@ function App() {
   const [projects, setProjects] = useState([]);
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
+  const [width, height] = useWindowSize();
+  const onlyWidth = useWindowWidth();
+  const onlyHeight = useWindowHeight();
 
   useEffect(() => {
     setHero({ ...heroData });
@@ -61,8 +66,19 @@ function App() {
               <span className="siteTitle">{' Doug Perez : '}</span>
               <span className="JobTitleinTitle">{'Front End Developer'}</span>
             </li>
-
-            <li>
+            {width < 600 ? null : (
+              <li>
+                <a
+                  href={'mailto:perezcpt@gmail.com'}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  color="green"
+                >
+                  <i className={`fa fa-${'envelope1 fa-2x'} fa-inverse`} />
+                </a>
+              </li>
+            )}
+            {/* <li>
               <a
                 href={'mailto:perezcpt@gmail.com'}
                 rel="noopener noreferrer"
@@ -71,7 +87,7 @@ function App() {
               >
                 <i className={`fa fa-${'envelope1 fa-2x'} fa-inverse`} />
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 href={'https://www.linkedin.com/in/doug-perez/'}
@@ -92,6 +108,7 @@ function App() {
                 <i className={`fa fa-${'github1 fa-2x'} fa-inverse`} />
               </a>
             </li>
+            {width < 600 ? console.log('FUK U') : console.log('FUK MI')}
             <li>
               <a
                 onClick={(event) => window.open('https://dougwperez.github.io/Doug-Perez-Resume/')}
@@ -100,7 +117,7 @@ function App() {
                 className="cta-btn cta-btn--resume1"
                 // href={resume}
               >
-                Download Resume
+                {width < 600 ? 'Resume' : 'Download Resume'}
               </a>
             </li>
           </ul>
