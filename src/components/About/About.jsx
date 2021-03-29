@@ -48,12 +48,14 @@ const About = () => {
                   </p>
                   {paragraphThree}
                 </p>
+
                 <p className="about-wrapper__info-text">
                   <p>
                     <b>Front End</b>
                   </p>
                   {paragraphTwo}
                 </p>
+
                 <p className="about-wrapper__info-text">
                   <p>
                     <b>Front End</b>
@@ -66,8 +68,15 @@ const About = () => {
                     <b>Technologies</b>
                   </p>
                   {paragraphTwo}
+                  <br />
+                  <br />
+                  {paragraphThree}
+                  <br />
+                  <br />
+                  {paragraphFour}
                 </p>
-                <p className="about-wrapper__info-text">{paragraphFour}</p>
+
+                {/* <p className="about-wrapper__info-text">{paragraphFour}</p> */}
                 {resume && (
                   <span className="d-flex mt-3">
                     <a
