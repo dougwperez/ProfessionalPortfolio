@@ -30,7 +30,7 @@ function App() {
   }, []);
 
   return (
-    <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
+    <div>
       <header className="navbar-fixed-top cbp-af-header" className="sticky-header-glass">
         <nav>
           <ul className="sticky-menu-options">
@@ -86,13 +86,14 @@ function App() {
           </ul>
         </nav>
       </header>
-
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
-    </PortfolioProvider>
+      <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+      </PortfolioProvider>
+    </div>
   );
 }
 
