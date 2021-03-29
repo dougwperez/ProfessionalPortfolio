@@ -44,21 +44,30 @@ const About = () => {
                 <br />
                 <p className="about-wrapper__info-text">
                   <p>
-                    <b>Test2</b>
+                    <b>Back End</b>
                   </p>
                   {paragraphThree}
                 </p>
+                <p className="about-wrapper__info-text">
+                  <p>
+                    <b>Front End</b>
+                  </p>
+                  {paragraphTwo}
+                </p>
+                <p className="about-wrapper__info-text">
+                  <p>
+                    <b>Front End</b>
+                  </p>
+                  {paragraphFour}
+                </p>
+
                 <p className="about-wrapper__info-text">
                   <p>
                     <b>Technologies</b>
                   </p>
                   {paragraphTwo}
                 </p>
-                <p className="about-wrapper__info-text">
-                  {
-                    'Other: Docker, AWS EC2, Jest, Enzyme, Mocha, Chai, Loader.io, K6, Git, Axios, Babel, Webpack'
-                  }
-                </p>
+                <p className="about-wrapper__info-text">{paragraphFour}</p>
                 {resume && (
                   <span className="d-flex mt-3">
                     <a
