@@ -40,23 +40,19 @@ const About = () => {
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
-                <p className="about-wrapper__info-text">
-                  {paragraphOne ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                </p>
+                <p className="about-wrapper__info-text">{paragraphOne}</p>
                 <br />
                 <p className="about-wrapper__info-text">
                   <p>
                     <b>Technologies</b>
                   </p>
-                  {paragraphTwo ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                  {paragraphTwo}
                 </p>
+                <p className="about-wrapper__info-text">{paragraphThree}</p>
                 <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphFour || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                  {
+                    'Other: Docker, AWS EC2, Jest, Enzyme, Mocha, Chai, Loader.io, K6, Git, Axios, Babel, Webpack'
+                  }
                 </p>
                 {resume && (
                   <span className="d-flex mt-3">

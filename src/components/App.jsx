@@ -107,7 +107,7 @@ function App() {
                 <i className={`fa fa-${'github1 fa-2x'} fa-inverse`} />
               </a>
             </li>
-            {width < 600 ? console.log('FUK U') : console.log('FUK MI')}
+
             <li>
               <a
                 onClick={(event) => window.open('https://dougwperez.github.io/Doug-Perez-Resume/')}
