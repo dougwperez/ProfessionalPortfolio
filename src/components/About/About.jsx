@@ -48,7 +48,12 @@ const About = () => {
                   </p>
                   {paragraphTwo}
                 </p>
-                <p className="about-wrapper__info-text">{paragraphThree}</p>
+                <p className="about-wrapper__info-text">
+                  <p>
+                    <b>Test</b>
+                  </p>
+                  {paragraphThree}
+                </p>
                 <p className="about-wrapper__info-text">
                   {
                     'Other: Docker, AWS EC2, Jest, Enzyme, Mocha, Chai, Loader.io, K6, Git, Axios, Babel, Webpack'
