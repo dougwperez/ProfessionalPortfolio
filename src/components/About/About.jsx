@@ -44,15 +44,15 @@ const About = () => {
                 <br />
                 <p className="about-wrapper__info-text">
                   <p>
-                    <b>Technologies</b>
+                    <b>Test2</b>
                   </p>
-                  {paragraphTwo}
+                  {paragraphThree}
                 </p>
                 <p className="about-wrapper__info-text">
                   <p>
-                    <b>Test</b>
+                    <b>Technologies</b>
                   </p>
-                  {paragraphThree}
+                  {paragraphTwo}
                 </p>
                 <p className="about-wrapper__info-text">
                   {
