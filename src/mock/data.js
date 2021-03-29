@@ -19,7 +19,7 @@ export const heroData = {
 export const aboutData = {
   img: 'profile1.jpg',
   paragraphOne:
-    'I first started coding Front End applications while quarantining in Wuhan in December 2019, during the first Covid-19 outbreak. Urged to evacuate by the State Department, I chose to stay in Wuhan with my family. During this tense time, I built ESL MiniGames, a suite of engaging, educational games in JavaScript. It was a resounding success that allowed for a more interactive experience over Zoom. From there, my passion for Front End development only grew.',
+    'I first started coding Front End applications while quarantining in Wuhan in December 2019, during the first Covid-19 outbreak. During this tense time, I built ESL MiniGames, a suite of engaging, educational games in JavaScript. It was a resounding success that allowed for a more interactive experience over Zoom. From there, my passion for Front End development only grew.',
   paragraphTwo:
     'Front End: JavaScript ES6 and ES5 , React.js, Redux, React Native, jQuery, HTML/CSS, Styled Components.',
   paragraphThree: 'Back End: PostgreSQL, MySQL, SQLite, MongoDB, Axios, Node.js, Express, Nginx.',

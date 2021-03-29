@@ -44,27 +44,6 @@ const About = () => {
                 <br />
                 <p className="about-wrapper__info-text">
                   <p>
-                    <b>Back End</b>
-                  </p>
-                  {paragraphThree}
-                </p>
-
-                <p className="about-wrapper__info-text">
-                  <p>
-                    <b>Front End</b>
-                  </p>
-                  {paragraphTwo}
-                </p>
-
-                <p className="about-wrapper__info-text">
-                  <p>
-                    <b>Front End</b>
-                  </p>
-                  {paragraphFour}
-                </p>
-
-                <p className="about-wrapper__info-text">
-                  <p>
                     <b>Technologies</b>
                   </p>
                   {paragraphTwo}
