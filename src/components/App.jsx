@@ -10,7 +10,6 @@ import { useWindowSize, useWindowWidth, useWindowHeight } from '@react-hook/wind
 import { PortfolioProvider } from '../context/context';
 
 import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
-console.log('window.innerWidth', window.innerWidth);
 
 function App() {
   const [hero, setHero] = useState({});
