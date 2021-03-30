@@ -38,19 +38,6 @@ function App() {
               <span className="siteTitle">{' Doug Perez : '}</span>
               <span className="JobTitleinTitle">{'Front End Developer'}</span>
             </li>
-            {width < 600 ? null : (
-              <li>
-                <a
-                  href={'mailto:perezcpt@gmail.com'}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  color="green"
-                >
-                  <i className={`fa fa-${'envelope1 fa-2x'} fa-inverse`} />
-                </a>
-              </li>
-            )}
-
             <li>
               <a
                 href={'https://github.com/dougwperez'}
@@ -66,11 +53,22 @@ function App() {
                 href={'https://www.linkedin.com/in/doug-perez/'}
                 rel="noopener noreferrer"
                 target="_blank"
-                color="green"
               >
                 <i className={`fa fa-${'linkedin1 fa-2x'} fa-inverse`} />
               </a>
             </li>
+            {width < 600 ? null : (
+              <li>
+                <a
+                  href={'mailto:perezcpt@gmail.com'}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  color="green"
+                >
+                  <i className={`fa fa-${'envelope1 fa-2x'} fa-inverse`} />
+                </a>
+              </li>
+            )}
 
             <li>
               <button
