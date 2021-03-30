@@ -73,7 +73,7 @@ function App() {
             </li>
 
             <li>
-              <a
+              <button
                 onClick={(event) => window.open('https://dougwperez.github.io/Doug-Perez-Resume/')}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -81,7 +81,7 @@ function App() {
                 // href={resume}
               >
                 {width < 600 ? 'Resume' : 'Download Resume'}
-              </a>
+              </button>
             </li>
           </ul>
         </nav>
