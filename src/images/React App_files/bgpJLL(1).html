@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://cdpn.io/erikthedeveloper/fullpage/bgpJLL -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - Solving the React undefined ref mystery</title>
+  
+  
+  
+  
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  <div id="app"><div data-reactroot=""><p><!-- react-text: 3 -->Open console to see error when clicking "(as prop)".<!-- /react-text --><br><em>This refAsProp currently works 0% of the time. Somehow this was working for intial render (because 2 render cycles?) and then not for unmount/remount. TODO: Recreate this.</em></p><!-- react-empty: 6 --><button>Click Me (as prop)</button><button>Click Me (as getter)</button></div></div>
+    <script src="./stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+  <script src="./react.js"></script>
+<script src="./react-dom.js"></script>
+      <script id="rendered-js">
+const { Component } = React;
+
+class SomeRef extends Component {
+  someMethod() {
+    alert('Hello from SomeRef.someMethod()!');
+  }
+
+  render() {
+    return null;
+  }}
+
+
+const UsesRefAsProp = ({ refAsProp }) => /*#__PURE__*/
+React.createElement("button", { onClick: () => refAsProp.someMethod() }, "Click Me (as prop)");
+
+
+const UsesRefAsGetter = ({ getRef }) => /*#__PURE__*/
+React.createElement("button", { onClick: () => getRef().someMethod() }, "Click Me (as getter)");
+
+
+const Parent = props => {
+  let _ref;
+  return /*#__PURE__*/(
+    React.createElement("div", null, /*#__PURE__*/
+    React.createElement("p", null, "Open console to see error when clicking \"(as prop)\".", /*#__PURE__*/
+    React.createElement("br", null), /*#__PURE__*/
+    React.createElement("em", null, "This refAsProp currently works 0% of the time. Somehow this was working for intial render (because 2 render cycles?) and then not for unmount/remount. TODO: Recreate this.")), /*#__PURE__*/
+
+
+
+    React.createElement(SomeRef, { ref: node => _ref = node }), /*#__PURE__*/
+    React.createElement(UsesRefAsProp, { refAsProp: _ref }), /*#__PURE__*/
+    React.createElement(UsesRefAsGetter, { getRef: () => _ref })));
+
+
+};
+
+ReactDOM.render( /*#__PURE__*/
+React.createElement(Parent, null),
+document.getElementById('app'));
+//# sourceURL=pen.js
+    </script>
+
+  
+
+
+
+
+ 
+</body></html>

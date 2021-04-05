@@ -8,6 +8,7 @@ import GithubButtons from './GithubButtons/GithubButtons';
 import { useWindowSize, useWindowWidth, useWindowHeight } from '@react-hook/window-size';
 
 import { PortfolioProvider } from '../context/context';
+import { Helmet } from 'react-helmet';
 
 import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
 
@@ -31,6 +32,9 @@ function App() {
 
   return (
     <div>
+      <Helmet>
+        {/* <script type="text/javascript">{window.$crisp=[];window.CRISP_WEBSITE_ID="d781a8dc-63eb-4a7d-8165-e5cbf8eb8c8c";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();}</script> */}
+      </Helmet>
       <header className="navbar-fixed-top cbp-af-header" className="sticky-header-glass">
         <nav>
           <ul className="sticky-menu-options">
