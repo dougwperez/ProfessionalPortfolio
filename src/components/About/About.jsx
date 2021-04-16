@@ -46,13 +46,17 @@ const About = () => {
                   <p>
                     <b className="tech-title">Technologies</b>
                   </p>
-                  {paragraphTwo}
-                  <br />
-                  <br />
-                  {paragraphThree}
-                  <br />
-                  <br />
-                  {paragraphFour}
+                  <div className="tech-list">
+                    <strong>
+                      {paragraphTwo}
+                      <br />
+                      <br />
+                      {paragraphThree}
+                      <br />
+                      <br />
+                      {paragraphFour}
+                    </strong>
+                  </div>
                 </p>
 
                 {/* <p className="about-wrapper__info-text">{paragraphFour}</p> */}
