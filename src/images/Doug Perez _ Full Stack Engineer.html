@@ -1,0 +1,2732 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8001/ -->
+<html lang="en" data-react-helmet="lang"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="note" content="environment=development"><script>window.$crisp=[];window.CRISP_WEBSITE_ID="d781a8dc-63eb-4a7d-8165-e5cbf8eb8c8c";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.defer=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script><script src="./Doug Perez _ Full Stack Engineer_files/l.js" defer=""></script><title>Doug Perez | Full Stack Engineer</title><link rel="icon" href="http://localhost:8001/favicon-32x32.png?v=4ccd13523eddd3694feac28b19d11786" type="image/png"><link rel="manifest" href="http://localhost:8001/manifest.webmanifest" crossorigin="anonymous"><meta name="theme-color" content="#02aab0"><link rel="apple-touch-icon" sizes="48x48" href="http://localhost:8001/icons/icon-48x48.png?v=4ccd13523eddd3694feac28b19d11786"><link rel="apple-touch-icon" sizes="72x72" href="http://localhost:8001/icons/icon-72x72.png?v=4ccd13523eddd3694feac28b19d11786"><link rel="apple-touch-icon" sizes="96x96" href="http://localhost:8001/icons/icon-96x96.png?v=4ccd13523eddd3694feac28b19d11786"><link rel="apple-touch-icon" sizes="144x144" href="http://localhost:8001/icons/icon-144x144.png?v=4ccd13523eddd3694feac28b19d11786"><link rel="apple-touch-icon" sizes="192x192" href="http://localhost:8001/icons/icon-192x192.png?v=4ccd13523eddd3694feac28b19d11786"><link rel="apple-touch-icon" sizes="256x256" href="http://localhost:8001/icons/icon-256x256.png?v=4ccd13523eddd3694feac28b19d11786"><link rel="apple-touch-icon" sizes="384x384" href="http://localhost:8001/icons/icon-384x384.png?v=4ccd13523eddd3694feac28b19d11786"><link rel="apple-touch-icon" sizes="512x512" href="http://localhost:8001/icons/icon-512x512.png?v=4ccd13523eddd3694feac28b19d11786"><script src="./Doug Perez _ Full Stack Engineer_files/socket.io.js"></script><link href="https://client.relay.crisp.chat/" rel="dns-prefetch" crossorigin=""><link href="https://client.crisp.chat/" rel="preconnect" crossorigin=""><script src="./Doug Perez _ Full Stack Engineer_files/client.js" type="text/javascript" async=""></script><link href="./Doug Perez _ Full Stack Engineer_files/client_default.css" type="text/css" rel="stylesheet"><style></style><link type="text/css" rel="stylesheet" href="blob:http://localhost:8001/04d64494-d9ca-4120-b6d1-00ba5b6492a1"><style type="text/css">@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap);</style><style type="text/css">@import url(https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap);</style><link type="text/css" rel="stylesheet" href="blob:http://localhost:8001/7a160d86-527b-4395-a2a1-512ec0c3d164"><link type="text/css" rel="stylesheet" href="blob:http://localhost:8001/b349beb1-3eec-440d-a4c5-8c527bcbcc5c"><meta name="description" content="Portfolio website for React Developer Doug Perez" data-react-helmet="true"><style type="text/css">@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);</style><style type="text/css">.huntr-ext-add-job-container .add-job-container {
+  padding: 25px 25px 100px 25px;
+  max-height: 550px;
+}
+.huntr-ext-add-job-container .save-job-footer {
+  width: 300px;
+  position: absolute;
+  bottom: 22px;
+  background-color: #f3f1f5;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.huntr-ext-add-job-container .btn {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  width: 150px !important;
+}
+.huntr-ext-add-job-container .btn.waiting {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+.huntr-ext-add-job-container .list-item {
+  text-transform: capitalize;
+}
+.huntr-ext-parsed-jobs-container .no-results {
+  font-size: 14px !important;
+  color: rgba(25,4,69,0.7) !important;
+  padding: 40px;
+  text-align: center;
+}
+.huntr-ext-parsed-jobs-container .job-result {
+  padding: 20px 25px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+.huntr-ext-parsed-jobs-container .job-result:hover {
+  background-color: rgba(25,4,69,0.1);
+}
+.huntr-ext-parsed-jobs-container .job-title {
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color: #190445 !important;
+  margin-bottom: 3px !important;
+}
+.huntr-ext-parsed-jobs-container .job-company,
+.huntr-ext-parsed-jobs-container .job-location {
+  max-width: 100px !important;
+}
+.huntr-ext-parsed-jobs-container .job-company {
+  margin-right: 10px !important;
+  font-weight: bold;
+  color: rgba(25,4,69,0.9);
+}
+.huntr-ext-parsed-jobs-container .job-location {
+  color: rgba(25,4,69,0.7);
+}
+.huntr-ext-parsed-jobs-container .job-description {
+  color: rgba(25,4,69,0.4);
+}
+.huntr-ext-parsed-jobs-container .job-company,
+.huntr-ext-parsed-jobs-container .job-description,
+.huntr-ext-parsed-jobs-container .job-location {
+  font-size: 13px;
+}
+.huntr-ext-parsed-jobs-container p {
+  line-height: 15px !important;
+  margin: 0 !important;
+}
+.huntr-ext-parsed-jobs-container span {
+  margin: 0 !important;
+  max-width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+.huntr-capitalize {
+  text-transform: capitalize;
+}
+.huntr-error-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  background-color: #ff3569;
+  padding: 15px;
+  font-size: 12px;
+  color: #fff;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: Lato, sans-serif;
+}
+.huntr-ext-add-job-success-container {
+  padding: 30px;
+  text-align: center;
+}
+.huntr-ext-add-job-success-container .message {
+  height: 180px !important;
+  margin-top: 20px !important;
+  border-bottom: 1px solid #eaeaea !important;
+}
+.huntr-ext-add-job-success-container .message p {
+  font-size: 22px !important;
+  line-height: 50px !important;
+  text-align: center !important;
+}
+.huntr-ext-add-job-success-container .message .huntr-icon {
+  font-size: 45px !important;
+  color: rgba(74,74,74,0.2) !important;
+}
+.huntr-ext-add-job-success-container .huntr-footer {
+  margin-top: 30px;
+}
+.huntr-ext-add-job-success-container .huntr-footer a.btn {
+  color: #fff !important;
+  width: 200px;
+}
+.huntr-ext-add-job-success-container .huntr-footer .btn img {
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+}
+.huntr-ext-settings-container {
+  margin-top: 25px;
+  font-family: 'Lato', sans-serif !important;
+  font-size: 16px;
+  text-align: center;
+  color: #4a4a4a;
+  height: 140px;
+  margin-top: 50px;
+}
+.huntr-ext-settings-container p {
+  line-height: 18px;
+}
+.huntr-ext-time-to-upgrade {
+  padding: 35px;
+  text-align: center;
+  color: #6a4feb;
+}
+.huntr-ext-time-to-upgrade .huntr-icon {
+  margin: 10px 0 40px 0;
+  font-size: 60px;
+  color: rgba(106,79,235,0.1);
+}
+#huntr-react-container-2 {
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  display: block !important;
+  font-family: 'Lato', sans-serif;
+}
+#huntr-react-container-2 a,
+#huntr-react-container-2 p,
+#huntr-react-container-2 span,
+#huntr-react-container-2 div {
+  font-family: 'Lato', sans-serif !important;
+}
+#huntr-react-container-2 form {
+  margin: 0;
+  padding: 0;
+}
+#huntr-react-container-2 ::-webkit-scrollbar-button {
+  width: 0px !important;
+  height: 0px !important;
+}
+#huntr-react-container-2 ::-webkit-scrollbar-track {
+  box-shadow: none !important;
+  background-color: "white" !important;
+}
+#huntr-react-container-2 ::-webkit-scrollbar-thumb {
+  background-color: rgba(24,0,69,0.1) !important;
+  border: 4px solid #fff !important;
+  border-radius: 100px !important;
+}
+#huntr-react-container-2 ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(24,0,69,0.2) !important;
+}
+#huntr-react-container-2 ::-webkit-scrollbar-thumb:active {
+  background-color: rgba(24,0,69,0.2) !important;
+}
+#huntr-react-container-2 ::-webkit-scrollbar {
+  width: 13px !important;
+  height: 20px !important;
+}
+#huntr-react-container-2 .huntr-title {
+  font-size: 22px;
+  font-weight: regular;
+  color: #190445 !important;
+}
+#huntr-react-container-2 .huntr-description {
+  font-size: 15px;
+  font-weight: regular;
+  color: rgba(25,4,69,0.7) !important;
+}
+#huntr-react-container-2 a {
+  cursor: pointer;
+}
+#huntr-react-container-2 .centered {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+#huntr-react-container-2 .field {
+  position: relative;
+}
+#huntr-react-container-2 .field-container .huntr-icon {
+  position: absolute;
+  right: 5px;
+  bottom: 14px;
+  font-size: 16px;
+  color: #d4d4d4;
+  cursor: pointer;
+}
+#huntr-react-container-2 .field-container .input-image {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 5px;
+  bottom: 14px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
+}
+#huntr-react-container-2 .hide {
+  visibility: hidden;
+}
+#huntr-react-container-2 .btn {
+  font-family: 'Lato', sans-serif !important;
+  border-radius: 4px !important;
+  font-size: 14px;
+  display: block !important;
+  cursor: pointer !important;
+  text-transform: capitalize !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.2px !important;
+  position: relative;
+  transition: all 0.4s ease-out !important;
+  text-align: center !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+  background-image: none !important;
+  background-repeat: no-repeat !important;
+  text-shadow: none !important;
+  line-height: 37px;
+  box-sizing: border-box !important;
+}
+#huntr-react-container-2 .btn .huntr-icon {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  color: rgba(255,255,255,0.4);
+  font-size: 16px;
+}
+#huntr-react-container-2 .btn-purple {
+  color: #fff;
+  text-shadow: 0px 1px 4px rgba(0,0,0,0.1);
+  background-color: #6a4feb;
+}
+#huntr-react-container-2 .btn-purple:hover {
+  background-color: #8c35ff;
+}
+#huntr-react-container-2 .btn-purple:disabled {
+  cursor: not-allowed;
+  color: rgba(25,4,69,0.4) !important;
+  background-color: rgba(25,4,69,0.2) !important;
+}
+#huntr-react-container-2 ul {
+  margin: 0px;
+  padding: 0px;
+}
+#huntr-react-container-2 ul li {
+  list-style: none;
+}
+#huntr-react-container-2 .location-search .huntr-drop-down-menu span {
+  font-size: 11px;
+  display: inline-block;
+}
+#huntr-react-container-2 .truncate {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#huntr-react-container-2 .huntr-drop-down-menu {
+  color: #4a4a4a;
+  font-family: 'Lato', sans-serif;
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 13px;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
+  z-index: 1;
+  border: 1px solid #ddd;
+  max-height: 250px;
+  overflow-y: auto;
+}
+#huntr-react-container-2 .huntr-drop-down-menu .huntr-ddmenu-footer {
+  padding: 10px 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  cursor: pointer;
+}
+#huntr-react-container-2 .huntr-drop-down-menu .huntr-ddmenu-footer .huntr-icon {
+  margin-right: 10px;
+}
+#huntr-react-container-2 .huntr-logo img {
+  width: 16px;
+  position: relative;
+  top: -5px;
+}
+#huntr-react-container-2 .huntr-ext-nav-menu {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#huntr-react-container-2 .huntr-ext-nav-menu .nav-tooltip {
+  display: none;
+  position: absolute;
+  background-color: #7f7b92;
+  color: #fff;
+  left: -45px;
+  font-size: 11px;
+  width: 90px;
+  line-height: 30px;
+  padding: 0px 15px;
+  border-radius: 20px;
+  top: -25px;
+  text-align: center;
+}
+#huntr-react-container-2 .huntr-ext-nav-menu .nav-tooltip:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #7f7b92;
+  top: 30px;
+  left: 45px;
+}
+#huntr-react-container-2 .huntr-ext-nav-menu ul li {
+  position: relative;
+  padding: 0px;
+  cursor: pointer;
+  margin: 0px 31px 0px 0px;
+  font-size: 17px;
+  display: inline-block;
+  color: #b5b5b5;
+}
+#huntr-react-container-2 .huntr-ext-nav-menu ul li a,
+#huntr-react-container-2 .huntr-ext-nav-menu ul li span {
+  line-height: 50px;
+  vertical-align: middle;
+}
+#huntr-react-container-2 .huntr-ext-nav-menu ul li:first-child {
+  margin-left: 20px;
+}
+#huntr-react-container-2 .huntr-ext-nav-menu ul li:last-child {
+  margin: 0px;
+}
+#huntr-react-container-2 .huntr-ext-nav-menu ul li:hover {
+  color: rgba(0,0,0,0.8);
+}
+#huntr-react-container-2 .huntr-ext-nav-menu ul li:hover .nav-tooltip {
+  display: inline-block;
+}
+#huntr-react-container-2 .huntr-ext-top-menu {
+  background-color: #f3f1f5;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  position: relative;
+  width: 100%;
+  color: rgba(0,0,0,0.25);
+}
+#huntr-react-container-2 .huntr-ext-top-menu img {
+  max-width: 60px;
+  box-sizing: content-box;
+  padding: 12px 0px 10px 12px;
+}
+#huntr-react-container-2 p,
+#huntr-react-container-2 span {
+  text-shadow: none;
+}
+#huntr-react-container-2 p.huntr-icon,
+#huntr-react-container-2 span.huntr-icon {
+  font-family: 'simple-line-icons' !important;
+}
+#huntr-react-container-2 p.huntr-icon:before,
+#huntr-react-container-2 span.huntr-icon:before {
+  font-family: 'simple-line-icons' !important;
+}
+#huntr-react-container-2 h1 {
+  font-family: 'Lato', sans-serif !important;
+  text-transform: uppercase !important;
+  color: #4a4a4a !important;
+  letter-spacing: 5px !important;
+  font-size: 16px !important;
+  font-weight: 900;
+}
+#huntr-react-container-2 .huntr-ext-app-container {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  z-index: 100000;
+  max-height: 600px;
+  min-height: 300px;
+}
+#huntr-react-container-2 .huntr-ext-app-container .inner-container {
+  height: 100%;
+  background-color: #fff;
+  width: 300px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  outline: 1px solid rgba(0,0,0,0.1);
+}
+#huntr-react-container-2 .huntr-ext-minimize {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  font-size: 35px;
+  font-family: 'Lato', sans-serif;
+  line-height: normal;
+  transform: rotate(45deg);
+  cursor: pointer;
+  color: rgba(74,74,74,0.2);
+  font-weight: 400;
+  z-index: 1;
+}
+#huntr-react-container-2 .huntr-ext-minimize:hover {
+  color: rgba(74,74,74,0.7);
+}
+#huntr-react-container-2 .editable-text-field {
+  width: 100%;
+}
+#huntr-react-container-2 .huntr-ext-app-mini {
+  background-color: #6a4feb;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: fixed;
+  z-index: 10000;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+#huntr-react-container-2 .huntr-ext-app-mini:after {
+  content: 'h';
+}
+#huntr-react-container-2 .huntr-ext-component-container h1 {
+  text-align: center;
+  margin: 60px 0px;
+}
+#huntr-react-container-2 .huntr-ext-component-container .drop-down-button {
+  font-family: 'Lato', sans-serif !important;
+  -webkit-appearance: none !important;
+  outline: 0 !important;
+  border-radius: 2px !important;
+  box-sizing: border-box !important;
+  font-family: 'Lato', sans-serif !important;
+  width: 100% !important;
+  padding: 12px 12px !important;
+  font-size: 14px !important;
+  color: rgba(74,74,74,0.9) !important;
+  margin-bottom: 14px !important;
+  font-weight: 400 !important;
+  background-color: #fafafa !important;
+  border: 1px solid #dcdcdc !important;
+  transition: none !important;
+  text-align: left !important;
+  cursor: pointer !important;
+}
+#huntr-react-container-2 .huntr-ext-component-container input {
+  font-size: 16px;
+  height: 35px;
+}
+#huntr-react-container-2 .huntr-ext-component-container input::-webkit-input-placeholder {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  font-family: 'Lato', sans-serif !important;
+  color: rgba(24,0,69,0.3) !important;
+}
+#huntr-react-container-2 .huntr-ext-component-container textarea {
+  font-size: 14px;
+  height: 130px;
+}
+#huntr-react-container-2 .huntr-ext-component-container textarea::-webkit-input-placeholder {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  font-family: 'Lato', sans-serif !important;
+  color: rgba(24,0,69,0.3) !important;
+}
+#huntr-react-container-2 .huntr-ext-component-container input,
+#huntr-react-container-2 .huntr-ext-component-container textarea {
+  box-shadow: none;
+  background-color: #fff;
+  background-image: none !important;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif !important;
+  letter-spacing: 0px;
+  width: 100%;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #eee !important;
+  font-weight: 400 !important;
+  margin: 0px !important;
+  color: rgba(25,4,69,0.7) !important;
+  border-radius: 0 !important;
+  line-height: normal !important;
+  padding: 20px 0 !important;
+}
+#huntr-react-container-2 .huntr-ext-component-container input.clean,
+#huntr-react-container-2 .huntr-ext-component-container textarea.clean {
+  border: none !important;
+  height: 100%;
+  padding: 0 !important;
+}
+#huntr-react-container-2 .huntr-ext-component-container input.clean:focus,
+#huntr-react-container-2 .huntr-ext-component-container textarea.clean:focus,
+#huntr-react-container-2 .huntr-ext-component-container input.clean::selection,
+#huntr-react-container-2 .huntr-ext-component-container textarea.clean::selection {
+  border-bottom: none !important;
+}
+#huntr-react-container-2 .huntr-ext-component-container input:focus,
+#huntr-react-container-2 .huntr-ext-component-container textarea:focus,
+#huntr-react-container-2 .huntr-ext-component-container input::selection,
+#huntr-react-container-2 .huntr-ext-component-container textarea::selection {
+  outline: 0;
+  border-bottom: 1px solid #8c35ff !important;
+  background-color: #fff !important;
+}
+#huntr-react-container-2 .huntr-ext-component-container input::selection,
+#huntr-react-container-2 .huntr-ext-component-container textarea::selection {
+  background-color: #8c35ff !important;
+  color: #fff;
+}
+.huntr-loader ::after,
+.huntr-loader ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.huntr-loader {
+  display: block;
+  height: 50px;
+  width: 50px;
+  animation: huntr-loader-1 3s linear infinite;
+  -webkit-animation: huntr-loader-1 3s linear infinite;
+}
+@-webkit-keyframes huntr-loader-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.huntr-loader span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  clip: rect(0px, 50px, 50px, 0);
+  -webkit-animation: huntr-loader-2 1.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+  animation: huntr-loader-2 1.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+@-webkit-keyframes huntr-loader-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.huntr-loader span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  border: 4px solid transparent;
+  border-top: 4px solid #6a4feb;
+  border-radius: 50%;
+  -webkit-animation: huntr-loader-3 1.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+  animation: huntr-loader-3 1.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+@-webkit-keyframes huntr-loader-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.huntr-loader span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  border: 4px solid rgba(106,79,235,0.2);
+  border-radius: 50%;
+}
+.react-datepicker-wrapper,
+.react-datepicker__input-container {
+  display: block !important;
+}
+.huntr-date-picker-popper {
+  font-size: 0.8rem;
+}
+.huntr-date-picker-popper .react-datepicker {
+  font-family: "Lato", Helvetica, Arial, sans-serif !important;
+  background-color: #fff !important;
+  color: #180045 !important;
+  border: 1px solid rgba(24,0,69,0.1) !important;
+  border-radius: 8px !important;
+  box-shadow: 0px 3px 7px -1px rgba(24,0,69,0.1) !important;
+}
+.huntr-date-picker-popper .react-datepicker__header {
+  background-color: #fafafb !important;
+  border-bottom: 1px solid rgba(24,0,69,0.1) !important;
+}
+.huntr-date-picker-popper .react-datepicker__day {
+  color: rgba(24,0,69,0.6) !important;
+}
+.huntr-date-picker-popper .react-datepicker__day-name {
+  color: rgba(24,0,69,0.7) !important;
+}
+.huntr-date-picker-popper .react-datepicker__day--disabled {
+  color: rgba(24,0,69,0.21) !important;
+}
+.huntr-date-picker-popper .react-datepicker__day--keyboard-selected,
+.huntr-date-picker-popper .react-datepicker__day--selected {
+  background-color: #8c35ff !important;
+  color: #fff !important;
+}
+.huntr-date-picker-popper .react-datepicker__today-button {
+  background-color: rgba(24,0,69,0.02) !important;
+  border-top: 1px solid rgba(24,0,69,0.1) !important;
+}
+.huntr-date-picker-popper .react-datepicker__time-container--with-today-button {
+  right: -96px !important;
+  border: 1px solid rgba(24,0,69,0.1) !important;
+  border-radius: 8px !important;
+  box-shadow: 0px 3px 7px -1px rgba(24,0,69,0.1) !important;
+}
+.huntr-date-picker-popper .react-datepicker__time-list-item {
+  color: rgba(24,0,69,0.7) !important;
+  height: 18px !important;
+}
+.huntr-date-picker-popper .react-datepicker__time-list-item::hover {
+  background-color: #fafafb !important;
+}
+.huntr-date-picker-popper .react-datepicker__time-list-item--selected {
+  background-color: #8c35ff !important;
+  color: #fff;
+}
+.huntr-date-picker {
+  display: block;
+}
+.react-datepicker__close-icon {
+  width: auto !important;
+}
+.react-datepicker__close-icon::after {
+  background-color: #180045 !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+@-moz-keyframes huntr-loader-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes huntr-loader-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes huntr-loader-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes huntr-loader-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes huntr-loader-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes huntr-loader-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes huntr-loader-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes huntr-loader-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes huntr-loader-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes huntr-loader-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes huntr-loader-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes huntr-loader-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style><style type="text/css">/*!
+ * Quill Editor v1.3.0
+ * https://quilljs.com/
+ * Copyright (c) 2014, Jason Chen
+ * Copyright (c) 2013, salesforce.com
+ */
+#huntr-react-container-2 .ql-container span,
+#huntr-react-container-2 .ql-container li,
+#huntr-react-container-2 .ql-container ul,
+#huntr-react-container-2 .ql-container div,
+#huntr-react-container-2 .ql-container strong,
+#huntr-react-container-2 .ql-container b,
+#huntr-react-container-2 .ql-container h1,
+#huntr-react-container-2 .ql-container h2,
+#huntr-react-container-2 .ql-container h3,
+#huntr-react-container-2 .ql-container p  {
+  font-size: 14px;
+  font-family: Lato, Arial, sans-serif !important;
+  color: #180045 !important;
+}
+
+#huntr-react-container-2 .ql-container {
+  box-sizing: border-box;
+  font-family: Lato, Arial, sans-serif;
+  font-size: 13px;
+  height: 100%;
+  margin: 0px;
+  position: relative;
+}
+#huntr-react-container-2 .ql-container.ql-disabled .ql-tooltip {
+  visibility: hidden;
+}
+#huntr-react-container-2 .ql-container.ql-disabled .ql-editor ul[data-checked] > li::before {
+  pointer-events: none;
+}
+#huntr-react-container-2 .ql-clipboard {
+  left: -100000px;
+  height: 1px;
+  overflow-y: hidden;
+  position: absolute;
+  top: 50%;
+}
+#huntr-react-container-2 .ql-clipboard p {
+  margin: 0;
+  padding: 0;
+}
+#huntr-react-container-2 .ql-editor {
+  box-sizing: border-box;
+  line-height: 1.42;
+  height: 100% !important;
+  outline: none;
+  overflow-y: auto;
+  padding: 12px 18px;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  text-align: left;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+#huntr-react-container-2 .ql-editor > * {
+  cursor: text;
+}
+#huntr-react-container-2 .ql-editor p,
+#huntr-react-container-2 .ql-editor ol,
+#huntr-react-container-2 .ql-editor ul,
+#huntr-react-container-2 .ql-editor pre,
+#huntr-react-container-2 .ql-editor blockquote,
+#huntr-react-container-2 .ql-editor h1,
+#huntr-react-container-2 .ql-editor h2,
+#huntr-react-container-2 .ql-editor h3,
+#huntr-react-container-2 .ql-editor h4,
+#huntr-react-container-2 .ql-editor h5,
+#huntr-react-container-2 .ql-editor h6 {
+  margin: 0;
+  padding: 0;
+  counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+#huntr-react-container-2 .ql-editor ol,
+#huntr-react-container-2 .ql-editor ul {
+  padding-left: 1.5em;
+}
+#huntr-react-container-2 .ql-editor ol > li,
+#huntr-react-container-2 .ql-editor ul > li {
+  list-style-type: none;
+}
+#huntr-react-container-2 .ql-editor ul > li::before {
+  content: '\2022';
+}
+#huntr-react-container-2 .ql-editor ul[data-checked=true],
+#huntr-react-container-2 .ql-editor ul[data-checked=false] {
+  pointer-events: none;
+}
+#huntr-react-container-2 .ql-editor ul[data-checked=true] > li *,
+#huntr-react-container-2 .ql-editor ul[data-checked=false] > li * {
+  pointer-events: all;
+}
+#huntr-react-container-2 .ql-editor ul[data-checked=true] > li::before,
+#huntr-react-container-2 .ql-editor ul[data-checked=false] > li::before {
+  color: #777;
+  cursor: pointer;
+  pointer-events: all;
+}
+#huntr-react-container-2 .ql-editor ul[data-checked=true] > li::before {
+  content: '\2611';
+}
+#huntr-react-container-2 .ql-editor ul[data-checked=false] > li::before {
+  content: '\2610';
+}
+#huntr-react-container-2 .ql-editor li::before {
+  display: inline-block;
+  white-space: nowrap;
+  width: 1.2em;
+}
+#huntr-react-container-2 .ql-editor li:not(.ql-direction-rtl)::before {
+  margin-left: -1.5em;
+  margin-right: 0.3em;
+  text-align: right;
+}
+#huntr-react-container-2 .ql-editor li.ql-direction-rtl::before {
+  margin-left: 0.3em;
+  margin-right: -1.5em;
+}
+#huntr-react-container-2 .ql-editor ol li:not(.ql-direction-rtl),
+#huntr-react-container-2 .ql-editor ul li:not(.ql-direction-rtl) {
+  padding-left: 1.5em;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-direction-rtl,
+#huntr-react-container-2 .ql-editor ul li.ql-direction-rtl {
+  padding-right: 1.5em;
+}
+#huntr-react-container-2 .ql-editor ol li {
+  counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+  counter-increment: list-0;
+}
+#huntr-react-container-2 .ql-editor ol li:before {
+  content: counter(list-0, decimal) '. ';
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-1 {
+  counter-increment: list-1;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-1:before {
+  content: counter(list-1, lower-alpha) '. ';
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-1 {
+  counter-reset: list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-2 {
+  counter-increment: list-2;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-2:before {
+  content: counter(list-2, lower-roman) '. ';
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-2 {
+  counter-reset: list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-3 {
+  counter-increment: list-3;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-3:before {
+  content: counter(list-3, decimal) '. ';
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-3 {
+  counter-reset: list-4 list-5 list-6 list-7 list-8 list-9;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-4 {
+  counter-increment: list-4;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-4:before {
+  content: counter(list-4, lower-alpha) '. ';
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-4 {
+  counter-reset: list-5 list-6 list-7 list-8 list-9;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-5 {
+  counter-increment: list-5;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-5:before {
+  content: counter(list-5, lower-roman) '. ';
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-5 {
+  counter-reset: list-6 list-7 list-8 list-9;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-6 {
+  counter-increment: list-6;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-6:before {
+  content: counter(list-6, decimal) '. ';
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-6 {
+  counter-reset: list-7 list-8 list-9;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-7 {
+  counter-increment: list-7;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-7:before {
+  content: counter(list-7, lower-alpha) '. ';
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-7 {
+  counter-reset: list-8 list-9;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-8 {
+  counter-increment: list-8;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-8:before {
+  content: counter(list-8, lower-roman) '. ';
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-8 {
+  counter-reset: list-9;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-9 {
+  counter-increment: list-9;
+}
+#huntr-react-container-2 .ql-editor ol li.ql-indent-9:before {
+  content: counter(list-9, decimal) '. ';
+}
+#huntr-react-container-2 .ql-editor .ql-indent-1:not(.ql-direction-rtl) {
+  padding-left: 3em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-1:not(.ql-direction-rtl) {
+  padding-left: 4.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-1.ql-direction-rtl.ql-align-right {
+  padding-right: 3em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-1.ql-direction-rtl.ql-align-right {
+  padding-right: 4.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-2:not(.ql-direction-rtl) {
+  padding-left: 6em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-2:not(.ql-direction-rtl) {
+  padding-left: 7.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-2.ql-direction-rtl.ql-align-right {
+  padding-right: 6em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-2.ql-direction-rtl.ql-align-right {
+  padding-right: 7.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-3:not(.ql-direction-rtl) {
+  padding-left: 9em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-3:not(.ql-direction-rtl) {
+  padding-left: 10.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-3.ql-direction-rtl.ql-align-right {
+  padding-right: 9em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-3.ql-direction-rtl.ql-align-right {
+  padding-right: 10.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-4:not(.ql-direction-rtl) {
+  padding-left: 12em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-4:not(.ql-direction-rtl) {
+  padding-left: 13.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-4.ql-direction-rtl.ql-align-right {
+  padding-right: 12em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-4.ql-direction-rtl.ql-align-right {
+  padding-right: 13.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-5:not(.ql-direction-rtl) {
+  padding-left: 15em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-5:not(.ql-direction-rtl) {
+  padding-left: 16.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-5.ql-direction-rtl.ql-align-right {
+  padding-right: 15em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-5.ql-direction-rtl.ql-align-right {
+  padding-right: 16.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-6:not(.ql-direction-rtl) {
+  padding-left: 18em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-6:not(.ql-direction-rtl) {
+  padding-left: 19.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-6.ql-direction-rtl.ql-align-right {
+  padding-right: 18em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-6.ql-direction-rtl.ql-align-right {
+  padding-right: 19.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-7:not(.ql-direction-rtl) {
+  padding-left: 21em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-7:not(.ql-direction-rtl) {
+  padding-left: 22.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-7.ql-direction-rtl.ql-align-right {
+  padding-right: 21em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-7.ql-direction-rtl.ql-align-right {
+  padding-right: 22.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-8:not(.ql-direction-rtl) {
+  padding-left: 24em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-8:not(.ql-direction-rtl) {
+  padding-left: 25.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-8.ql-direction-rtl.ql-align-right {
+  padding-right: 24em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-8.ql-direction-rtl.ql-align-right {
+  padding-right: 25.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-9:not(.ql-direction-rtl) {
+  padding-left: 27em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-9:not(.ql-direction-rtl) {
+  padding-left: 28.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-indent-9.ql-direction-rtl.ql-align-right {
+  padding-right: 27em;
+}
+#huntr-react-container-2 .ql-editor li.ql-indent-9.ql-direction-rtl.ql-align-right {
+  padding-right: 28.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-video {
+  display: block;
+  max-width: 100%;
+}
+#huntr-react-container-2 .ql-editor .ql-video.ql-align-center {
+  margin: 0 auto;
+}
+#huntr-react-container-2 .ql-editor .ql-video.ql-align-right {
+  margin: 0 0 0 auto;
+}
+#huntr-react-container-2 .ql-editor .ql-bg-black {
+  background-color: #000;
+}
+#huntr-react-container-2 .ql-editor .ql-bg-red {
+  background-color: #e60000;
+}
+#huntr-react-container-2 .ql-editor .ql-bg-orange {
+  background-color: #f90;
+}
+#huntr-react-container-2 .ql-editor .ql-bg-yellow {
+  background-color: #ff0;
+}
+#huntr-react-container-2 .ql-editor .ql-bg-green {
+  background-color: #008a00;
+}
+#huntr-react-container-2 .ql-editor .ql-bg-blue {
+  background-color: #06c;
+}
+#huntr-react-container-2 .ql-editor .ql-bg-purple {
+  background-color: #93f;
+}
+#huntr-react-container-2 .ql-editor .ql-color-white {
+  color: #fff;
+}
+#huntr-react-container-2 .ql-editor .ql-color-red {
+  color: #e60000;
+}
+#huntr-react-container-2 .ql-editor .ql-color-orange {
+  color: #f90;
+}
+#huntr-react-container-2 .ql-editor .ql-color-yellow {
+  color: #ff0;
+}
+#huntr-react-container-2 .ql-editor .ql-color-green {
+  color: #008a00;
+}
+#huntr-react-container-2 .ql-editor .ql-color-blue {
+  color: #06c;
+}
+#huntr-react-container-2 .ql-editor .ql-color-purple {
+  color: #93f;
+}
+#huntr-react-container-2 .ql-editor .ql-font-serif {
+  font-family: Georgia, Times New Roman, serif;
+}
+#huntr-react-container-2 .ql-editor .ql-font-monospace {
+  font-family: Monaco, Courier New, monospace;
+}
+#huntr-react-container-2 .ql-editor .ql-size-small {
+  font-size: 0.75em;
+}
+#huntr-react-container-2 .ql-editor .ql-size-large {
+  font-size: 1.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-size-huge {
+  font-size: 2.5em;
+}
+#huntr-react-container-2 .ql-editor .ql-direction-rtl {
+  direction: rtl;
+  text-align: inherit;
+}
+#huntr-react-container-2 .ql-editor .ql-align-center {
+  text-align: center;
+}
+#huntr-react-container-2 .ql-editor .ql-align-justify {
+  text-align: justify;
+}
+#huntr-react-container-2 .ql-editor .ql-align-right {
+  text-align: right;
+}
+#huntr-react-container-2 .ql-editor .ql-embed-selected {
+  border: 1px solid #777;
+  user-select: none;
+}
+#huntr-react-container-2 .ql-editor.ql-blank::before {
+  color: rgba(25,4,69,0.4);
+  content: attr(data-placeholder);
+  font-style: normal;
+  pointer-events: none;
+  position: absolute;
+}
+#huntr-react-container-2 .ql-snow.ql-toolbar:after,
+#huntr-react-container-2 .ql-snow .ql-toolbar:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+#huntr-react-container-2 .ql-snow.ql-toolbar button,
+#huntr-react-container-2 .ql-snow .ql-toolbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  height: 24px;
+  padding: 3px 5px;
+  width: 28px;
+  box-shadow: none;
+  min-height: 1em;
+}
+#huntr-react-container-2 .ql-snow.ql-toolbar button svg,
+#huntr-react-container-2 .ql-snow .ql-toolbar button svg {
+  float: left;
+  height: 100%;
+}
+#huntr-react-container-2 .ql-snow.ql-toolbar button:active:hover,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:active:hover {
+  outline: none;
+}
+#huntr-react-container-2 .ql-snow.ql-toolbar input.ql-image[type=file],
+#huntr-react-container-2 .ql-snow .ql-toolbar input.ql-image[type=file] {
+  display: none;
+}
+#huntr-react-container-2 .ql-snow.ql-toolbar button:hover,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:hover,
+#huntr-react-container-2 .ql-snow.ql-toolbar button:focus,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:focus,
+#huntr-react-container-2 .ql-snow.ql-toolbar button.ql-active,
+#huntr-react-container-2 .ql-snow .ql-toolbar button.ql-active,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label:hover,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label:hover,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label.ql-active,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label.ql-active,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item:hover,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item:hover,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item.ql-selected,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item.ql-selected {
+  color: #06c;
+}
+#huntr-react-container-2 .ql-snow.ql-toolbar button:hover .ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:hover .ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar button:focus .ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:focus .ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar button.ql-active .ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar button.ql-active .ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label:hover .ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label:hover .ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item:hover .ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item:hover .ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar button:hover .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:hover .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar button:focus .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:focus .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar button.ql-active .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar button.ql-active .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill {
+  fill: #06c;
+}
+#huntr-react-container-2 .ql-snow.ql-toolbar button:hover .ql-stroke,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:hover .ql-stroke,
+#huntr-react-container-2 .ql-snow.ql-toolbar button:focus .ql-stroke,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:focus .ql-stroke,
+#huntr-react-container-2 .ql-snow.ql-toolbar button.ql-active .ql-stroke,
+#huntr-react-container-2 .ql-snow .ql-toolbar button.ql-active .ql-stroke,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+#huntr-react-container-2 .ql-snow.ql-toolbar button:hover .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:hover .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow.ql-toolbar button:focus .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow .ql-toolbar button:focus .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow.ql-toolbar button.ql-active .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow .ql-toolbar button.ql-active .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter,
+#huntr-react-container-2 .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter {
+  stroke: #06c;
+}
+@media (pointer: coarse) {
+  .ql-snow.ql-toolbar button:hover:not(.ql-active),
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) {
+    color: #444;
+  }
+  .ql-snow.ql-toolbar button:hover:not(.ql-active) .ql-fill,
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) .ql-fill,
+  .ql-snow.ql-toolbar button:hover:not(.ql-active) .ql-stroke.ql-fill,
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) .ql-stroke.ql-fill {
+    fill: #444;
+  }
+  .ql-snow.ql-toolbar button:hover:not(.ql-active) .ql-stroke,
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) .ql-stroke,
+  .ql-snow.ql-toolbar button:hover:not(.ql-active) .ql-stroke-miter,
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) .ql-stroke-miter {
+    stroke: #444;
+  }
+}
+#huntr-react-container-2 .ql-snow {
+  box-sizing: border-box;
+}
+#huntr-react-container-2 .ql-snow * {
+  box-sizing: border-box;
+}
+#huntr-react-container-2 .ql-snow .ql-hidden {
+  display: none;
+}
+#huntr-react-container-2 .ql-snow .ql-out-bottom,
+#huntr-react-container-2 .ql-snow .ql-out-top {
+  visibility: hidden;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip {
+  position: absolute;
+  transform: translateY(10px);
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip a {
+  cursor: pointer;
+  text-decoration: none;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip.ql-flip {
+  transform: translateY(-10px);
+}
+#huntr-react-container-2 .ql-snow .ql-formats {
+  display: inline-block;
+  vertical-align: middle;
+}
+#huntr-react-container-2 .ql-snow .ql-formats:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+#huntr-react-container-2 .ql-snow .ql-stroke {
+  fill: none;
+  stroke: #444;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+#huntr-react-container-2 .ql-snow .ql-stroke-miter {
+  fill: none;
+  stroke: #444;
+  stroke-miterlimit: 10;
+  stroke-width: 2;
+}
+#huntr-react-container-2 .ql-snow .ql-fill,
+#huntr-react-container-2 .ql-snow .ql-stroke.ql-fill {
+  fill: #444;
+}
+#huntr-react-container-2 .ql-snow .ql-empty {
+  fill: none;
+}
+#huntr-react-container-2 .ql-snow .ql-even {
+  fill-rule: evenodd;
+}
+#huntr-react-container-2 .ql-snow .ql-thin,
+#huntr-react-container-2 .ql-snow .ql-stroke.ql-thin {
+  stroke-width: 1;
+}
+#huntr-react-container-2 .ql-snow .ql-transparent {
+  opacity: 0.4;
+}
+#huntr-react-container-2 .ql-snow .ql-direction svg:last-child {
+  display: none;
+}
+#huntr-react-container-2 .ql-snow .ql-direction.ql-active svg:last-child {
+  display: inline;
+}
+#huntr-react-container-2 .ql-snow .ql-direction.ql-active svg:first-child {
+  display: none;
+}
+#huntr-react-container-2 .ql-snow .ql-editor h1 {
+  font-size: 2em;
+}
+#huntr-react-container-2 .ql-snow .ql-editor h2 {
+  font-size: 1.5em;
+}
+#huntr-react-container-2 .ql-snow .ql-editor h3 {
+  font-size: 1.17em;
+}
+#huntr-react-container-2 .ql-snow .ql-editor h4 {
+  font-size: 1em;
+}
+#huntr-react-container-2 .ql-snow .ql-editor h5 {
+  font-size: 0.83em;
+}
+#huntr-react-container-2 .ql-snow .ql-editor h6 {
+  font-size: 0.67em;
+}
+#huntr-react-container-2 .ql-snow .ql-editor a {
+  text-decoration: underline;
+}
+#huntr-react-container-2 .ql-snow .ql-editor blockquote {
+  border-left: 4px solid #ccc;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 16px;
+}
+#huntr-react-container-2 .ql-snow .ql-editor code,
+#huntr-react-container-2 .ql-snow .ql-editor pre {
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+#huntr-react-container-2 .ql-snow .ql-editor pre {
+  white-space: pre-wrap;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+#huntr-react-container-2 .ql-snow .ql-editor code {
+  font-size: 85%;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+#huntr-react-container-2 .ql-snow .ql-editor code:before,
+#huntr-react-container-2 .ql-snow .ql-editor code:after {
+  content: "\A0";
+  letter-spacing: -2px;
+}
+#huntr-react-container-2 .ql-snow .ql-editor pre.ql-syntax {
+  background-color: #23241f;
+  color: #f8f8f2;
+  overflow: visible;
+}
+#huntr-react-container-2 .ql-snow .ql-editor img {
+  max-width: 100%;
+}
+#huntr-react-container-2 .ql-snow .ql-picker {
+  color: #444;
+  display: inline-block;
+  float: left;
+  font-size: 14px;
+  font-weight: 500;
+  height: 24px;
+  position: relative;
+  vertical-align: middle;
+}
+#huntr-react-container-2 .ql-snow .ql-picker-label {
+  cursor: pointer;
+  display: inline-block;
+  height: 100%;
+  padding-left: 8px;
+  padding-right: 2px;
+  position: relative;
+  width: 100%;
+}
+#huntr-react-container-2 .ql-snow .ql-picker-label::before {
+  display: inline-block;
+  line-height: 22px;
+}
+#huntr-react-container-2 .ql-snow .ql-picker-options {
+  background-color: #fff;
+  display: none;
+  min-width: 100%;
+  padding: 4px 8px;
+  position: absolute;
+  white-space: nowrap;
+}
+#huntr-react-container-2 .ql-snow .ql-picker-options .ql-picker-item {
+  cursor: pointer;
+  display: block;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  color: #ccc;
+  z-index: 2;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-expanded .ql-picker-label .ql-fill {
+  fill: #ccc;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-expanded .ql-picker-label .ql-stroke {
+  stroke: #ccc;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-expanded .ql-picker-options {
+  display: block;
+  margin-top: -1px;
+  top: 100%;
+  z-index: 1;
+}
+#huntr-react-container-2 .ql-snow .ql-color-picker,
+#huntr-react-container-2 .ql-snow .ql-icon-picker {
+  width: 28px;
+}
+#huntr-react-container-2 .ql-snow .ql-color-picker .ql-picker-label,
+#huntr-react-container-2 .ql-snow .ql-icon-picker .ql-picker-label {
+  padding: 2px 4px;
+}
+#huntr-react-container-2 .ql-snow .ql-color-picker .ql-picker-label svg,
+#huntr-react-container-2 .ql-snow .ql-icon-picker .ql-picker-label svg {
+  right: 4px;
+}
+#huntr-react-container-2 .ql-snow .ql-icon-picker .ql-picker-options {
+  padding: 4px 0px;
+}
+#huntr-react-container-2 .ql-snow .ql-icon-picker .ql-picker-item {
+  height: 24px;
+  width: 24px;
+  padding: 2px 4px;
+}
+#huntr-react-container-2 .ql-snow .ql-color-picker .ql-picker-options {
+  padding: 3px 5px;
+  width: 152px;
+}
+#huntr-react-container-2 .ql-snow .ql-color-picker .ql-picker-item {
+  border: 1px solid transparent;
+  float: left;
+  height: 16px;
+  margin: 2px;
+  padding: 0px;
+  width: 16px;
+}
+#huntr-react-container-2 .ql-snow .ql-picker:not(.ql-color-picker):not(.ql-icon-picker) svg {
+  position: absolute;
+  margin-top: -9px;
+  right: 0;
+  top: 50%;
+  width: 18px;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-label[data-label]:not([data-label=''])::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-label[data-label]:not([data-label=''])::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-label[data-label]:not([data-label=''])::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-label]:not([data-label=''])::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-item[data-label]:not([data-label=''])::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-item[data-label]:not([data-label=''])::before {
+  content: attr(data-label);
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header {
+  width: 98px;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-label::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item::before {
+  content: 'Normal';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="1"]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="1"]::before {
+  content: 'Heading 1';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="2"]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="2"]::before {
+  content: 'Heading 2';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="3"]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="3"]::before {
+  content: 'Heading 3';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="4"]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="4"]::before {
+  content: 'Heading 4';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="5"]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="5"]::before {
+  content: 'Heading 5';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="6"]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="6"]::before {
+  content: 'Heading 6';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="1"]::before {
+  font-size: 2em;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="2"]::before {
+  font-size: 1.5em;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="3"]::before {
+  font-size: 1.17em;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="4"]::before {
+  font-size: 1em;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="5"]::before {
+  font-size: 0.83em;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="6"]::before {
+  font-size: 0.67em;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font {
+  width: 108px;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-label::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-item::before {
+  content: 'Sans Serif';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-label[data-value=serif]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-item[data-value=serif]::before {
+  content: 'Serif';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-label[data-value=monospace]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-item[data-value=monospace]::before {
+  content: 'Monospace';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-item[data-value=serif]::before {
+  font-family: Georgia, Times New Roman, serif;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-font .ql-picker-item[data-value=monospace]::before {
+  font-family: Monaco, Courier New, monospace;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size {
+  width: 98px;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-label::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-item::before {
+  content: 'Normal';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-label[data-value=small]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=small]::before {
+  content: 'Small';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-label[data-value=large]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=large]::before {
+  content: 'Large';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-label[data-value=huge]::before,
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=huge]::before {
+  content: 'Huge';
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=small]::before {
+  font-size: 10px;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=large]::before {
+  font-size: 18px;
+}
+#huntr-react-container-2 .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=huge]::before {
+  font-size: 32px;
+}
+#huntr-react-container-2 .ql-snow .ql-color-picker.ql-background .ql-picker-item {
+  background-color: #fff;
+}
+#huntr-react-container-2 .ql-snow .ql-color-picker.ql-color .ql-picker-item {
+  background-color: #000;
+}
+#huntr-react-container-2 .ql-toolbar.ql-snow {
+  border-bottom: 1px solid #ECE9F2;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  padding: 8px;
+}
+#huntr-react-container-2 .ql-toolbar.ql-snow .ql-formats {
+  margin-right: 15px;
+}
+#huntr-react-container-2 .ql-toolbar.ql-snow .ql-picker-label {
+  border: 1px solid transparent;
+}
+#huntr-react-container-2 .ql-toolbar.ql-snow .ql-picker-options {
+  border: 1px solid transparent;
+  box-shadow: rgba(0,0,0,0.2) 0 2px 8px;
+}
+#huntr-react-container-2 .ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  border-color: #ccc;
+}
+#huntr-react-container-2 .ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options {
+  border-color: #ccc;
+}
+#huntr-react-container-2 .ql-toolbar.ql-snow .ql-color-picker .ql-picker-item.ql-selected,
+#huntr-react-container-2 .ql-toolbar.ql-snow .ql-color-picker .ql-picker-item:hover {
+  border-color: #000;
+}
+#huntr-react-container-2 .ql-toolbar.ql-snow + .ql-container.ql-snow {
+  border-top: 0px;
+  padding-bottom: 40px;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px #ddd;
+  color: #444;
+  padding: 5px 12px;
+  white-space: nowrap;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip::before {
+  content: "Visit URL:";
+  line-height: 26px;
+  margin-right: 8px;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip input[type=text] {
+  display: none;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  height: 26px;
+  margin: 0px;
+  padding: 3px 5px;
+  width: 170px;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip a.ql-preview {
+  display: inline-block;
+  max-width: 200px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip a.ql-action::after {
+  border-right: 1px solid #ccc;
+  content: 'Edit';
+  margin-left: 16px;
+  padding-right: 8px;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip a.ql-remove::before {
+  content: 'Remove';
+  margin-left: 8px;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip a {
+  line-height: 26px;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip.ql-editing a.ql-preview,
+#huntr-react-container-2 .ql-snow .ql-tooltip.ql-editing a.ql-remove {
+  display: none;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip.ql-editing input[type=text] {
+  display: inline-block;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip.ql-editing a.ql-action::after {
+  border-right: 0px;
+  content: 'Save';
+  padding-right: 0px;
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip[data-mode=link]::before {
+  content: "Enter link:";
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip[data-mode=formula]::before {
+  content: "Enter formula:";
+}
+#huntr-react-container-2 .ql-snow .ql-tooltip[data-mode=video]::before {
+  content: "Enter video:";
+}
+#huntr-react-container-2 .ql-snow a {
+  color: #06c;
+}
+</style><style type="text/css">.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow {
+  margin-left: -8px;
+  position: absolute;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow, .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before,
+.react-datepicker__month-read-view--down-arrow::before,
+.react-datepicker__month-year-read-view--down-arrow::before {
+  box-sizing: content-box;
+  position: absolute;
+  border: 8px solid transparent;
+  height: 0;
+  width: 1px;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before,
+.react-datepicker__month-read-view--down-arrow::before,
+.react-datepicker__month-year-read-view--down-arrow::before {
+  content: "";
+  z-index: -1;
+  border-width: 8px;
+  left: -8px;
+  border-bottom-color: #aeaeae;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle {
+  top: 0;
+  margin-top: -8px;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle, .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before {
+  border-top: none;
+  border-bottom-color: #f0f0f0;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before {
+  top: -1px;
+  border-bottom-color: #aeaeae;
+}
+
+.react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow {
+  bottom: 0;
+  margin-bottom: -8px;
+}
+
+.react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow, .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before,
+.react-datepicker__month-read-view--down-arrow::before,
+.react-datepicker__month-year-read-view--down-arrow::before {
+  border-bottom: none;
+  border-top-color: #fff;
+}
+
+.react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before,
+.react-datepicker__month-read-view--down-arrow::before,
+.react-datepicker__month-year-read-view--down-arrow::before {
+  bottom: -1px;
+  border-top-color: #aeaeae;
+}
+
+.react-datepicker-wrapper {
+  display: inline-block;
+  padding: 0;
+  border: 0;
+}
+
+.react-datepicker {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #aeaeae;
+  border-radius: 0.3rem;
+  display: inline-block;
+  position: relative;
+}
+
+.react-datepicker--time-only .react-datepicker__triangle {
+  left: 35px;
+}
+
+.react-datepicker--time-only .react-datepicker__time-container {
+  border-left: 0;
+}
+
+.react-datepicker--time-only .react-datepicker__time,
+.react-datepicker--time-only .react-datepicker__time-box {
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.react-datepicker__triangle {
+  position: absolute;
+  left: 50px;
+}
+
+.react-datepicker-popper {
+  z-index: 1;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] {
+  margin-top: 10px;
+}
+
+.react-datepicker-popper[data-placement="bottom-end"] .react-datepicker__triangle, .react-datepicker-popper[data-placement="top-end"] .react-datepicker__triangle {
+  left: auto;
+  right: 50px;
+}
+
+.react-datepicker-popper[data-placement^="top"] {
+  margin-bottom: 10px;
+}
+
+.react-datepicker-popper[data-placement^="right"] {
+  margin-left: 8px;
+}
+
+.react-datepicker-popper[data-placement^="right"] .react-datepicker__triangle {
+  left: auto;
+  right: 42px;
+}
+
+.react-datepicker-popper[data-placement^="left"] {
+  margin-right: 8px;
+}
+
+.react-datepicker-popper[data-placement^="left"] .react-datepicker__triangle {
+  left: 42px;
+  right: auto;
+}
+
+.react-datepicker__header {
+  text-align: center;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #aeaeae;
+  border-top-left-radius: 0.3rem;
+  padding-top: 8px;
+  position: relative;
+}
+
+.react-datepicker__header--time {
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.react-datepicker__header--time:not(.react-datepicker__header--time--only) {
+  border-top-left-radius: 0;
+}
+
+.react-datepicker__header:not(.react-datepicker__header--has-time-select) {
+  border-top-right-radius: 0.3rem;
+}
+
+.react-datepicker__year-dropdown-container--select,
+.react-datepicker__month-dropdown-container--select,
+.react-datepicker__month-year-dropdown-container--select,
+.react-datepicker__year-dropdown-container--scroll,
+.react-datepicker__month-dropdown-container--scroll,
+.react-datepicker__month-year-dropdown-container--scroll {
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+  margin-top: 0;
+  color: #000;
+  font-weight: bold;
+  font-size: 0.944rem;
+}
+
+.react-datepicker-time__header {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.react-datepicker__navigation {
+  background: none;
+  line-height: 1.7rem;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  width: 0;
+  padding: 0;
+  border: 0.45rem solid transparent;
+  z-index: 1;
+  height: 10px;
+  width: 10px;
+  text-indent: -999em;
+  overflow: hidden;
+}
+
+.react-datepicker__navigation--previous {
+  left: 10px;
+  border-right-color: #ccc;
+}
+
+.react-datepicker__navigation--previous:hover {
+  border-right-color: #b3b3b3;
+}
+
+.react-datepicker__navigation--previous--disabled, .react-datepicker__navigation--previous--disabled:hover {
+  border-right-color: #e6e6e6;
+  cursor: default;
+}
+
+.react-datepicker__navigation--next {
+  right: 10px;
+  border-left-color: #ccc;
+}
+
+.react-datepicker__navigation--next--with-time:not(.react-datepicker__navigation--next--with-today-button) {
+  right: 95px;
+}
+
+.react-datepicker__navigation--next:hover {
+  border-left-color: #b3b3b3;
+}
+
+.react-datepicker__navigation--next--disabled, .react-datepicker__navigation--next--disabled:hover {
+  border-left-color: #e6e6e6;
+  cursor: default;
+}
+
+.react-datepicker__navigation--years {
+  position: relative;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.react-datepicker__navigation--years-previous {
+  top: 4px;
+  border-top-color: #ccc;
+}
+
+.react-datepicker__navigation--years-previous:hover {
+  border-top-color: #b3b3b3;
+}
+
+.react-datepicker__navigation--years-upcoming {
+  top: -4px;
+  border-bottom-color: #ccc;
+}
+
+.react-datepicker__navigation--years-upcoming:hover {
+  border-bottom-color: #b3b3b3;
+}
+
+.react-datepicker__month-container {
+  float: left;
+}
+
+.react-datepicker__year {
+  margin: 0.4rem;
+  text-align: center;
+}
+
+.react-datepicker__year-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 180px;
+}
+
+.react-datepicker__year .react-datepicker__year-text {
+  display: inline-block;
+  width: 4rem;
+  margin: 2px;
+}
+
+.react-datepicker__month {
+  margin: 0.4rem;
+  text-align: center;
+}
+
+.react-datepicker__month .react-datepicker__month-text,
+.react-datepicker__month .react-datepicker__quarter-text {
+  display: inline-block;
+  width: 4rem;
+  margin: 2px;
+}
+
+.react-datepicker__input-time-container {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin: 5px 0 10px 15px;
+  text-align: left;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__caption {
+  display: inline-block;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__input-container {
+  display: inline-block;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input {
+  width: auto;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input[type="time"]::-webkit-inner-spin-button,
+.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input[type="time"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input[type="time"] {
+  -moz-appearance: textfield;
+}
+
+.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__delimiter {
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.react-datepicker__time-container {
+  float: right;
+  border-left: 1px solid #aeaeae;
+  width: 85px;
+}
+
+.react-datepicker__time-container--with-today-button {
+  display: inline;
+  border: 1px solid #aeaeae;
+  border-radius: 0.3rem;
+  position: absolute;
+  right: -72px;
+  top: 0;
+}
+
+.react-datepicker__time-container .react-datepicker__time {
+  position: relative;
+  background: white;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
+  width: 85px;
+  overflow-x: hidden;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list {
+  list-style: none;
+  margin: 0;
+  height: calc(195px + (1.7rem / 2));
+  overflow-y: scroll;
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 100%;
+  box-sizing: content-box;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item {
+  height: 30px;
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected {
+  background-color: #216ba5;
+  color: white;
+  font-weight: bold;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected:hover {
+  background-color: #216ba5;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--disabled {
+  color: #ccc;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--disabled:hover {
+  cursor: default;
+  background-color: transparent;
+}
+
+.react-datepicker__week-number {
+  color: #ccc;
+  display: inline-block;
+  width: 1.7rem;
+  line-height: 1.7rem;
+  text-align: center;
+  margin: 0.166rem;
+}
+
+.react-datepicker__week-number.react-datepicker__week-number--clickable {
+  cursor: pointer;
+}
+
+.react-datepicker__week-number.react-datepicker__week-number--clickable:hover {
+  border-radius: 0.3rem;
+  background-color: #f0f0f0;
+}
+
+.react-datepicker__day-names,
+.react-datepicker__week {
+  white-space: nowrap;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+  color: #000;
+  display: inline-block;
+  width: 1.7rem;
+  line-height: 1.7rem;
+  text-align: center;
+  margin: 0.166rem;
+}
+
+.react-datepicker__month--selected, .react-datepicker__month--in-selecting-range, .react-datepicker__month--in-range,
+.react-datepicker__quarter--selected,
+.react-datepicker__quarter--in-selecting-range,
+.react-datepicker__quarter--in-range {
+  border-radius: 0.3rem;
+  background-color: #216ba5;
+  color: #fff;
+}
+
+.react-datepicker__month--selected:hover, .react-datepicker__month--in-selecting-range:hover, .react-datepicker__month--in-range:hover,
+.react-datepicker__quarter--selected:hover,
+.react-datepicker__quarter--in-selecting-range:hover,
+.react-datepicker__quarter--in-range:hover {
+  background-color: #1d5d90;
+}
+
+.react-datepicker__month--disabled,
+.react-datepicker__quarter--disabled {
+  color: #ccc;
+  pointer-events: none;
+}
+
+.react-datepicker__month--disabled:hover,
+.react-datepicker__quarter--disabled:hover {
+  cursor: default;
+  background-color: transparent;
+}
+
+.react-datepicker__day,
+.react-datepicker__month-text,
+.react-datepicker__quarter-text,
+.react-datepicker__year-text {
+  cursor: pointer;
+}
+
+.react-datepicker__day:hover,
+.react-datepicker__month-text:hover,
+.react-datepicker__quarter-text:hover,
+.react-datepicker__year-text:hover {
+  border-radius: 0.3rem;
+  background-color: #f0f0f0;
+}
+
+.react-datepicker__day--today,
+.react-datepicker__month-text--today,
+.react-datepicker__quarter-text--today,
+.react-datepicker__year-text--today {
+  font-weight: bold;
+}
+
+.react-datepicker__day--highlighted,
+.react-datepicker__month-text--highlighted,
+.react-datepicker__quarter-text--highlighted,
+.react-datepicker__year-text--highlighted {
+  border-radius: 0.3rem;
+  background-color: #3dcc4a;
+  color: #fff;
+}
+
+.react-datepicker__day--highlighted:hover,
+.react-datepicker__month-text--highlighted:hover,
+.react-datepicker__quarter-text--highlighted:hover,
+.react-datepicker__year-text--highlighted:hover {
+  background-color: #32be3f;
+}
+
+.react-datepicker__day--highlighted-custom-1,
+.react-datepicker__month-text--highlighted-custom-1,
+.react-datepicker__quarter-text--highlighted-custom-1,
+.react-datepicker__year-text--highlighted-custom-1 {
+  color: magenta;
+}
+
+.react-datepicker__day--highlighted-custom-2,
+.react-datepicker__month-text--highlighted-custom-2,
+.react-datepicker__quarter-text--highlighted-custom-2,
+.react-datepicker__year-text--highlighted-custom-2 {
+  color: green;
+}
+
+.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range {
+  border-radius: 0.3rem;
+  background-color: #216ba5;
+  color: #fff;
+}
+
+.react-datepicker__day--selected:hover, .react-datepicker__day--in-selecting-range:hover, .react-datepicker__day--in-range:hover,
+.react-datepicker__month-text--selected:hover,
+.react-datepicker__month-text--in-selecting-range:hover,
+.react-datepicker__month-text--in-range:hover,
+.react-datepicker__quarter-text--selected:hover,
+.react-datepicker__quarter-text--in-selecting-range:hover,
+.react-datepicker__quarter-text--in-range:hover,
+.react-datepicker__year-text--selected:hover,
+.react-datepicker__year-text--in-selecting-range:hover,
+.react-datepicker__year-text--in-range:hover {
+  background-color: #1d5d90;
+}
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected {
+  border-radius: 0.3rem;
+  background-color: #2a87d0;
+  color: #fff;
+}
+
+.react-datepicker__day--keyboard-selected:hover,
+.react-datepicker__month-text--keyboard-selected:hover,
+.react-datepicker__quarter-text--keyboard-selected:hover,
+.react-datepicker__year-text--keyboard-selected:hover {
+  background-color: #1d5d90;
+}
+
+.react-datepicker__day--in-selecting-range ,
+.react-datepicker__month-text--in-selecting-range ,
+.react-datepicker__quarter-text--in-selecting-range ,
+.react-datepicker__year-text--in-selecting-range {
+  background-color: rgba(33, 107, 165, 0.5);
+}
+
+.react-datepicker__month--selecting-range .react-datepicker__day--in-range , .react-datepicker__month--selecting-range
+.react-datepicker__month-text--in-range , .react-datepicker__month--selecting-range
+.react-datepicker__quarter-text--in-range , .react-datepicker__month--selecting-range
+.react-datepicker__year-text--in-range {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.react-datepicker__day--disabled,
+.react-datepicker__month-text--disabled,
+.react-datepicker__quarter-text--disabled,
+.react-datepicker__year-text--disabled {
+  cursor: default;
+  color: #ccc;
+}
+
+.react-datepicker__day--disabled:hover,
+.react-datepicker__month-text--disabled:hover,
+.react-datepicker__quarter-text--disabled:hover,
+.react-datepicker__year-text--disabled:hover {
+  background-color: transparent;
+}
+
+.react-datepicker__month-text.react-datepicker__month--selected:hover, .react-datepicker__month-text.react-datepicker__month--in-range:hover, .react-datepicker__month-text.react-datepicker__quarter--selected:hover, .react-datepicker__month-text.react-datepicker__quarter--in-range:hover,
+.react-datepicker__quarter-text.react-datepicker__month--selected:hover,
+.react-datepicker__quarter-text.react-datepicker__month--in-range:hover,
+.react-datepicker__quarter-text.react-datepicker__quarter--selected:hover,
+.react-datepicker__quarter-text.react-datepicker__quarter--in-range:hover {
+  background-color: #216ba5;
+}
+
+.react-datepicker__month-text:hover,
+.react-datepicker__quarter-text:hover {
+  background-color: #f0f0f0;
+}
+
+.react-datepicker__input-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.react-datepicker__year-read-view,
+.react-datepicker__month-read-view,
+.react-datepicker__month-year-read-view {
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+}
+
+.react-datepicker__year-read-view:hover,
+.react-datepicker__month-read-view:hover,
+.react-datepicker__month-year-read-view:hover {
+  cursor: pointer;
+}
+
+.react-datepicker__year-read-view:hover .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__year-read-view:hover .react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-read-view:hover .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view:hover .react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view:hover .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-year-read-view:hover .react-datepicker__month-read-view--down-arrow {
+  border-top-color: #b3b3b3;
+}
+
+.react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow {
+  border-top-color: #ccc;
+  float: right;
+  margin-left: 20px;
+  top: 8px;
+  position: relative;
+  border-width: 0.45rem;
+}
+
+.react-datepicker__year-dropdown,
+.react-datepicker__month-dropdown,
+.react-datepicker__month-year-dropdown {
+  background-color: #f0f0f0;
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  top: 30px;
+  z-index: 1;
+  text-align: center;
+  border-radius: 0.3rem;
+  border: 1px solid #aeaeae;
+}
+
+.react-datepicker__year-dropdown:hover,
+.react-datepicker__month-dropdown:hover,
+.react-datepicker__month-year-dropdown:hover {
+  cursor: pointer;
+}
+
+.react-datepicker__year-dropdown--scrollable,
+.react-datepicker__month-dropdown--scrollable,
+.react-datepicker__month-year-dropdown--scrollable {
+  height: 150px;
+  overflow-y: scroll;
+}
+
+.react-datepicker__year-option,
+.react-datepicker__month-option,
+.react-datepicker__month-year-option {
+  line-height: 20px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.react-datepicker__year-option:first-of-type,
+.react-datepicker__month-option:first-of-type,
+.react-datepicker__month-year-option:first-of-type {
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+
+.react-datepicker__year-option:last-of-type,
+.react-datepicker__month-option:last-of-type,
+.react-datepicker__month-year-option:last-of-type {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.react-datepicker__year-option:hover,
+.react-datepicker__month-option:hover,
+.react-datepicker__month-year-option:hover {
+  background-color: #ccc;
+}
+
+.react-datepicker__year-option:hover .react-datepicker__navigation--years-upcoming,
+.react-datepicker__month-option:hover .react-datepicker__navigation--years-upcoming,
+.react-datepicker__month-year-option:hover .react-datepicker__navigation--years-upcoming {
+  border-bottom-color: #b3b3b3;
+}
+
+.react-datepicker__year-option:hover .react-datepicker__navigation--years-previous,
+.react-datepicker__month-option:hover .react-datepicker__navigation--years-previous,
+.react-datepicker__month-year-option:hover .react-datepicker__navigation--years-previous {
+  border-top-color: #b3b3b3;
+}
+
+.react-datepicker__year-option--selected,
+.react-datepicker__month-option--selected,
+.react-datepicker__month-year-option--selected {
+  position: absolute;
+  left: 15px;
+}
+
+.react-datepicker__close-icon {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  padding: 0px 6px 0px 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.react-datepicker__close-icon::after {
+  cursor: pointer;
+  background-color: #216ba5;
+  color: #fff;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  padding: 2px;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  content: "\D7";
+}
+
+.react-datepicker__today-button {
+  background: #f0f0f0;
+  border-top: 1px solid #aeaeae;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 0;
+  clear: left;
+}
+
+.react-datepicker__portal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 2147483647;
+}
+
+.react-datepicker__portal .react-datepicker__day-name,
+.react-datepicker__portal .react-datepicker__day,
+.react-datepicker__portal .react-datepicker__time-name {
+  width: 3rem;
+  line-height: 3rem;
+}
+
+@media (max-width: 400px), (max-height: 550px) {
+  .react-datepicker__portal .react-datepicker__day-name,
+  .react-datepicker__portal .react-datepicker__day,
+  .react-datepicker__portal .react-datepicker__time-name {
+    width: 2rem;
+    line-height: 2rem;
+  }
+}
+
+.react-datepicker__portal .react-datepicker__current-month,
+.react-datepicker__portal .react-datepicker-time__header {
+  font-size: 1.44rem;
+}
+
+.react-datepicker__portal .react-datepicker__navigation {
+  border: 0.81rem solid transparent;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--previous {
+  border-right-color: #ccc;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--previous:hover {
+  border-right-color: #b3b3b3;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--previous--disabled, .react-datepicker__portal .react-datepicker__navigation--previous--disabled:hover {
+  border-right-color: #e6e6e6;
+  cursor: default;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--next {
+  border-left-color: #ccc;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--next:hover {
+  border-left-color: #b3b3b3;
+}
+
+.react-datepicker__portal .react-datepicker__navigation--next--disabled, .react-datepicker__portal .react-datepicker__navigation--next--disabled:hover {
+  border-left-color: #e6e6e6;
+  cursor: default;
+}
+</style><style type="text/css">@font-face { font-family: 'simple-line-icons'; src: url('chrome-extension://mihdfbecejheednfigjpdacgeilhlmnf/assets/fonts/Simple-Line-Icons.ttf') format('truetype'); }</style><script charset="utf-8" src="./Doug Perez _ Full Stack Engineer_files/commons.ca164d68933ab6f22ebe.hot-update.js" crossorigin="anonymous"></script><script charset="utf-8" src="./Doug Perez _ Full Stack Engineer_files/commons.a48a49a0014ded72d02f.hot-update.js" crossorigin="anonymous"></script></head><body><div id="___gatsby"><div tabindex="-1" id="gatsby-focus-wrapper" style="outline: none;"><div><header class="sticky-header-glass"><nav><ul class="sticky-menu-options"><li class="fullTitle"><span class="siteTitle"> Doug Perez : </span><span class="JobTitleinTitle">Full Stack Engineer</span></li><li><a href="https://github.com/dougwperez" rel="noopener noreferrer" target="_blank" color="green"><i class="fa fa-github1 fa-2x fa-inverse"></i></a></li><li><a href="https://www.linkedin.com/in/doug-perez/" rel="noopener noreferrer" target="_blank"><i class="fa fa-linkedin1 fa-2x fa-inverse"></i></a></li><li><a href="mailto:perezcpt@gmail.com" rel="noopener noreferrer" target="_blank" color="green"><i class="fa fa-envelope1 fa-2x fa-inverse"></i></a></li><li><button target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--resume1">Download Resume</button></li></ul></nav></header><section id="hero" class="jumbotron"><div class="container"><div class="circles"><div>Test</div><div></div><div></div><span></span></div><h1 class="react-reveal hero-title" style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 500ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-245571434285044-4;">Full Stack Engineer <span class="text-color-main">Doug Perez</span><br>An SF-based React Developer.</h1><p class="react-reveal hero-cta" style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 1000ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-245571434285044-4;"><span class="cta-btn cta-btn--hero"><a class="learnMore">Learn more</a></span></p></div></section><section id="about"><div class="container"><h2 class="react-reveal section-title" style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 300ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-245571434285044-2;">About Doug</h2><br><div class="about-wrapper row"><div class="col-md-6 col-sm-12"><div class="react-reveal about-wrapper__image" style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 600ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-245571434285044-3;"><imgcontainer><img class="rounded shadow-lg" src="./Doug Perez _ Full Stack Engineer_files/profileXL-63e85918e6af111fa5d4c0a30ce2f08e.jpg" alt="JS Unscramble live demo" width="400"></imgcontainer></div></div><div class="col-md-6 col-sm-12"><div class="react-reveal about-wrapper__info" style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 1000ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-245571434285044-4;"><p class="about-wrapper__info-text">I first started coding Front End applications while quarantining in Wuhan in December 2019, during the first Covid-19 outbreak. During this tense time, I built ESL MiniGames, a suite of engaging, educational games in JavaScript. It was a resounding success that allowed for a more interactive experience over Zoom. From there, my passion for Front End development only grew.</p><br><p class="about-wrapper__info-text"><p><b class="tech-title">TECHNOLOGIES</b></p><div class="tech-list"><strong>Front End: JavaScript ES6, HTML5, React.js, Redux, React Native, Gatsby, jQuery, Styled Components, Sass.<br><br>Back End: Node.js, Express, Nginx, GraphQL, MongoDB, PostgreSQL, MySQL, SQLite, REST API, Redis.<br><br>DevOps &amp; Testing: AWS EC2, Netlify, Docker, Heroku, Git, Axios, Babel, Webpack, Jest, Enzyme, Mocha, Chai, Loader.io, K6.</strong></div></p><span class="d-flex mt-3"><a target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--resume" href="https://dougwperez.github.io/Doug-Perez-Resume/">View Resume</a></span></div></div></div></div></section><section id="projects"><div class="container"><div class="project-wrapper"><h2 class="react-reveal section-title">Projects</h2><br><br><div class="row"><div class="col-lg-4 col-sm-12"><div class="react-reveal project-wrapper__text"><h3 class="project-wrapper__text-title">JS Unscramble</h3><div><p>A MERN stack web app that gamifies the process of learning JS fundamentals, inspired by Duolingo. Users are presented with a random JavaScript toy problem, with a scrambled solution. The objective is to unscramble the solution.</p><p class="mb-4"></p></div><a target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero" href="https://serene-garden-81705.herokuapp.com/#">See Live</a><a target="_blank" rel="noopener noreferrer" class="cta-btn text-color-main" href="https://github.com/dougwperez/UnscrambleJS">Source Code</a></div></div><div class="col-lg-8 col-sm-12"><div class="react-reveal project-wrapper__image"><a href="https://serene-garden-81705.herokuapp.com/#" target="_blank" aria-label="Project Link" rel="noopener noreferrer"><div><div data-tilt="true" class="thumbnail rounded"><imgcontainer><img class="animated-gif" src="./Doug Perez _ Full Stack Engineer_files/project1hd-fa9f23a6f6692e600d3e4dd37828f9d6.gif" alt="JS Unscramble live demo" fluid="[object Object]"></imgcontainer></div></div></a></div></div></div><div class="row"><div class="col-lg-4 col-sm-12"><div class="react-reveal project-wrapper__text"><h3 class="project-wrapper__text-title">ZenRent: Reviews</h3><div><p>Built a MERN stack web application for peer-to-peer home sharing. My focus was the reviews microservice. Utilized Reacted Styled Components in combination with extensive use of Flexbox to achieve superior consistency across multiple platforms.</p><p class="mb-4">Additionally I was the Project Manager for ZenRent. Kept the team focused, on schedule and motivated.</p></div><a target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero" href="https://www.youtube.com/watch?v=PdbfBXb6QXw">See Live</a><a target="_blank" rel="noopener noreferrer" class="cta-btn text-color-main" href="https://github.com/ZenRent/Reviews">Source Code</a></div></div><div class="col-lg-8 col-sm-12"><div class="react-reveal project-wrapper__image"><a href="https://www.youtube.com/watch?v=PdbfBXb6QXw" target="_blank" aria-label="Project Link" rel="noopener noreferrer"><div><div data-tilt="true" class="thumbnail rounded"><imgcontainer><img class="animated-gif" src="./Doug Perez _ Full Stack Engineer_files/project2hd-a8cdcb0a8284f0281396cf00cc0ff2e2.gif" alt="JS Unscramble live demo" fluid="[object Object]"></imgcontainer></div></div></a></div></div></div><div class="row"><div class="col-lg-4 col-sm-12"><div class="react-reveal project-wrapper__text"><h3 class="project-wrapper__text-title">ESL MiniGames</h3><div><p>Developed for Wuhan students during the 2019 Outbreak of Covid-19, ESL MiniGames features six different Vanilla JS and JQuery games that allowed my students to practice various English concepts.</p><p class="mb-4"></p></div><a target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero" href="https://dougwperez.github.io/ESL-MiniGames/">See Live</a><a target="_blank" rel="noopener noreferrer" class="cta-btn text-color-main" href="https://github.com/dougwperez/ESL-MiniGames">Source Code</a></div></div><div class="col-lg-8 col-sm-12"><div class="react-reveal project-wrapper__image"><a href="https://dougwperez.github.io/ESL-MiniGames/" target="_blank" aria-label="Project Link" rel="noopener noreferrer"><div><div data-tilt="true" class="thumbnail rounded"><imgcontainer><img class="animated-gif" src="./Doug Perez _ Full Stack Engineer_files/project3hd-29c624055346a8ec3ff3bf4ca6a27cc1.gif" alt="JS Unscramble live demo" fluid="[object Object]"></imgcontainer></div></div></a></div></div></div><div class="row"><div class="col-lg-4 col-sm-12"><div class="react-reveal project-wrapper__text"><h3 class="project-wrapper__text-title">Alex4Hope Memorial</h3><div><p>Built with a dual purpose in mind, Alex4Hope is meant to serve as both a Memorial as well as platform for the organization, which is committed to raising awareness about fentanyl and other illicit substances.</p><p class="mb-4"></p></div><a target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero" href="https://dougwperez.github.io/Movahedi-memorial/">See Live</a><a target="_blank" rel="noopener noreferrer" class="cta-btn text-color-main" href="https://github.com/dougwperez/Movahedi-memorial">Source Code</a></div></div><div class="col-lg-8 col-sm-12"><div class="react-reveal project-wrapper__image"><a href="https://dougwperez.github.io/Movahedi-memorial/" target="_blank" aria-label="Project Link" rel="noopener noreferrer"><div><div data-tilt="true" class="thumbnail rounded"><imgcontainer><img class="animated-gif" src="./Doug Perez _ Full Stack Engineer_files/project4hd-15fbd516a793381ae784fa8521a9aef0.gif" alt="JS Unscramble live demo" fluid="[object Object]"></imgcontainer></div></div></a></div></div></div><div class="row"><div class="col-lg-4 col-sm-12"><div class="react-reveal project-wrapper__text"><h3 class="project-wrapper__text-title">BrightStack.io</h3><div><p>The purpose of this project was to optimize a legacy codebase. The results were as follows: 1. Optimized performance while scaling up the database by a factor of 10,000. 2. Improved load speeds from 338.72 ms to 3.28 ms and maintained an error rate of 8%. Performance gains attributed to horizontal scaling, using Nginx as a load balancer and sending requests to an array of EC2 servers.</p><p class="mb-4">Technologies: PostgreSQL, Node.JS, Jest, Enzyme, Docker, AWS (EC2), React</p></div><a target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero" href="https://www.youtube.com/watch?v=YjxJDCq-xew&amp;t=1s">See Live</a><a target="_blank" rel="noopener noreferrer" class="cta-btn text-color-main" href="https://github.com/britestack/photo-gallery">Source Code</a></div></div><div class="col-lg-8 col-sm-12"><div class="react-reveal project-wrapper__image"><a href="https://www.youtube.com/watch?v=YjxJDCq-xew&amp;t=1s" target="_blank" aria-label="Project Link" rel="noopener noreferrer"><div><div data-tilt="true" class="thumbnail rounded"><imgcontainer><div class=" gatsby-image-wrapper" style="position: relative; overflow: hidden;"><div aria-hidden="true" style="width: 100%; padding-bottom: 50.2924%;"></div><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAABh0lEQVQoz1VRCXLbMAzMOyqTOkESPMRDimUr8VXLdtLm/+8JqCTT6Q5nBVJYEAs+NU0zz3sdEmuBbb7BNjlkX5/NFxe0/iUwxjl/qus6hoB96FxslRa2lxRrKxyxA+PoBNCij3QOCruuA4C2bbOYNgKEcz3Bh+BDjCnRjtj7QIsOiHvvFaJUSkmJiEKILPb0Z0hxTGkcxnHMau+plxj8NE0xUJFE2ZS6+R9ZzBk3zqIzDVAnrKybCh0n/3VDzoriV7ZbFGSSnHK2YlVmcVmW5xUxRiALStnX35C20ieapURNLBRSUWNM1XaUo7RlvFxv5vxwODwej2VZtNZKivl6Ny+X6XhRxlKMcdhfFhj373/+iud5O02Htw8m9Y/4eLzd79dlIX/WGErFcbc9XvQqw5B25ysMu/vjjUrQZF5v7zyLWRafTqespLYBpEJ/vnV+0NsZXNC279Ao62qhaLS1MjRz3Qfeye+bh2Gw1rYZTQuitb4CWSlToa2a/J5lVZFHmg7PVK5Bxie2OmGpE7wm2gAAAABJRU5ErkJggg==" alt="" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 0; transition-delay: 500ms;"><picture><source srcset="/static/4b106e738d3dc4f29a41c129612325df/8080f/project4.png 342w,
+/static/4b106e738d3dc4f29a41c129612325df/3ff62/project4.png 683w,
+/static/4b106e738d3dc4f29a41c129612325df/7eec6/project4.png 1196w" sizes="(max-width: 1196px) 100vw, 1196px"><img sizes="(max-width: 1196px) 100vw, 1196px" srcset="/static/4b106e738d3dc4f29a41c129612325df/8080f/project4.png 342w,
+/static/4b106e738d3dc4f29a41c129612325df/3ff62/project4.png 683w,
+/static/4b106e738d3dc4f29a41c129612325df/7eec6/project4.png 1196w" src="./Doug Perez _ Full Stack Engineer_files/project4.png" alt="BrightStack.io" loading="lazy" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1; transition: opacity 500ms ease 0s;"></picture><noscript><picture><source srcset="/static/4b106e738d3dc4f29a41c129612325df/8080f/project4.png 342w,
+/static/4b106e738d3dc4f29a41c129612325df/3ff62/project4.png 683w,
+/static/4b106e738d3dc4f29a41c129612325df/7eec6/project4.png 1196w" sizes="(max-width: 1196px) 100vw, 1196px" /><img loading="lazy" sizes="(max-width: 1196px) 100vw, 1196px" srcset="/static/4b106e738d3dc4f29a41c129612325df/8080f/project4.png 342w,
+/static/4b106e738d3dc4f29a41c129612325df/3ff62/project4.png 683w,
+/static/4b106e738d3dc4f29a41c129612325df/7eec6/project4.png 1196w" src="/static/4b106e738d3dc4f29a41c129612325df/7eec6/project4.png" alt="BrightStack.io" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></imgcontainer></div></div></a></div></div></div></div></div></section><section id="contact"><div class="container"><h2 class="react-reveal section-title">Contact Doug</h2><div class="react-reveal contact-wrapper"><p class="contact-wrapper__text">Would you like to work with me? Sounds Great!</p><p class="contact-wrapper__text">perezcpt@gmail.com</p><p class="contact-wrapper__text">415-259-7430</p><a target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--resume" href="mailto:perezcpt@gmail.com">Let's Talk</a></div></div></section><footer class="footer navbar-static-bottom"><div class="container"><span class="back-to-top"><a><i class="fa fa-angle-up fa-2x" aria-hidden="true"></i></a></span><div class="social-links"><a href="mailto:perezcpt@gmail.com" rel="noopener noreferrer" target="_blank" aria-label="envelope"><i class="fa fa-envelope fa-inverse"></i></a><a href="https://www.linkedin.com/in/doug-perez/" rel="noopener noreferrer" target="_blank" aria-label="linkedin"><i class="fa fa-linkedin fa-inverse"></i></a><a href="https://github.com/dougwperez" rel="noopener noreferrer" target="_blank" aria-label="github"><i class="fa fa-github fa-inverse"></i></a></div><hr></div></footer></div></div><div id="gatsby-announcer" aria-live="assertive" aria-atomic="true" style="position: absolute; top: 0px; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border: 0px;"></div></div><script src="./Doug Perez _ Full Stack Engineer_files/polyfill.js" nomodule=""></script><script src="./Doug Perez _ Full Stack Engineer_files/commons.js"></script><div id="query-on-demand-indicator-element"></div><gatsby-portal></gatsby-portal><div class="crisp-client"><div class="cc-l3zb"><div class="cc-lcor"><style type="text/css">.crisp-client .cc-kv6t .cc-6zjc,
+.crisp-client .cc-kv6t .cc-1mk2:hover {
+  color: #FFFFFF !important;
+}
+
+.crisp-client .cc-kv6t .cc-10m9,
+.crisp-client .cc-kv6t .cc-17tf:hover {
+  color: #005965 !important;
+}
+
+.crisp-client .cc-kv6t .cc-dkda,
+.crisp-client .cc-kv6t .cc-r4ie:hover {
+  color: #008997 !important;
+}
+
+.crisp-client .cc-kv6t .cc-jq4y,
+.crisp-client .cc-kv6t .cc-5lan:hover {
+  color: #00A3B4 !important;
+}
+
+.crisp-client .cc-kv6t .cc-k5w4 {
+  background-color: #FFFFFF !important;
+}
+
+.crisp-client .cc-kv6t .cc-5ekd {
+  background-color: #005965 !important;
+}
+
+.crisp-client .cc-kv6t .cc-16jc {
+  background-color: #00909E !important;
+}
+
+.crisp-client .cc-kv6t .cc-1ada,
+.crisp-client .cc-kv6t .cc-ew5j:before,
+.crisp-client .cc-kv6t .cc-ew5j:after {
+  background-color: #00A3B4 !important;
+}
+
+.crisp-client .cc-kv6t .cc-y5jx {
+  background-color: #F1F7F7 !important;
+}
+
+.crisp-client .cc-kv6t .cc-y6ot,
+.crisp-client .cc-kv6t .cc-183m:hover {
+  background-color: #F9F9F9 !important;
+}
+
+.crisp-client .cc-kv6t .cc-1ybb {
+  background-image: linear-gradient(125deg, #00A3B4 -10%, #005965 100%) !important;
+}
+
+.crisp-client .cc-kv6t .cc-ofgq,
+.crisp-client .cc-kv6t .cc-fg2d:hover {
+  border-color: #FFFFFF !important;
+}
+
+.crisp-client .cc-kv6t .cc-2ydi {
+  border-color: rgba(0, 89, 101, 0.175) !important;
+}
+
+.crisp-client .cc-kv6t .cc-1aev,
+.crisp-client .cc-kv6t .cc-2hzo:hover,
+.crisp-client .cc-kv6t .cc-18sf:before,
+.crisp-client .cc-kv6t .cc-18sf:after {
+  border-color: #00A3B4 !important;
+}
+
+.crisp-client .cc-kv6t .cc-1nph {
+  border-color: rgba(0, 163, 180, 0.15) !important;
+}
+
+.crisp-client .cc-kv6t .cc-1o96 {
+  border-top-color: #00A3B4 !important;
+}
+
+.crisp-client .cc-kv6t .cc-ve3u,
+.crisp-client .cc-kv6t .cc-1nmg:hover {
+  border-color: #F1F7F7 !important;
+}
+
+.crisp-client .cc-kv6t .cc-clw4::placeholder {
+  color: #4EA4AF !important;
+}
+
+.crisp-client .cc-kv6t .cc-2n8m::placeholder {
+  color: #4EA4AF !important;
+}
+
+.crisp-client .cc-kv6t .cc-3x4f,
+.crisp-client .cc-kv6t .cc-1afs:hover,
+.crisp-client .cc-kv6t .cc-3x4f:hover,
+.crisp-client .cc-kv6t .cc-1afs:active,
+.crisp-client .cc-kv6t .cc-3x4f:active,
+.crisp-client .cc-kv6t .cc-1c1d:hover .cc-1f87,
+.crisp-client .cc-kv6t .cc-1c1d .cc-1f87:active {
+  background: #005965 !important;
+}
+
+.crisp-client .cc-kv6t .cc-4xbu,
+.crisp-client .cc-kv6t .cc-caj5:hover {
+  background: #008997 !important;
+}
+
+.crisp-client .cc-kv6t .cc-4xbu:hover,
+.crisp-client .cc-kv6t .cc-caj5:active {
+  background: #007685 !important;
+}
+
+.crisp-client .cc-kv6t .cc-4xbu:active {
+  background: #005965 !important;
+}
+
+.crisp-client .cc-kv6t .cc-g73w:hover .cc-199t {
+  background: #008997 !important;
+}
+
+.crisp-client .cc-kv6t .cc-g73w .cc-199t:active {
+  background: #007685 !important;
+}
+
+.crisp-client .cc-kv6t .cc-vuur,
+.crisp-client .cc-kv6t .cc-7rgf[data-active="true"] {
+  background: #00A3B4 !important;
+}
+
+.crisp-client .cc-kv6t .cc-vuur:hover,
+.crisp-client .cc-kv6t .cc-7rgf[data-active="true"]:active {
+  background: #00909E !important;
+}
+
+.crisp-client .cc-kv6t .cc-vuur:active {
+  background: #008997 !important;
+}
+
+.crisp-client .cc-kv6t .cc-1gmp::selection,
+.crisp-client .cc-kv6t .cc-1gmp *::selection {
+  color: #191919 !important;
+  background-color: #DBF7F9 !important;
+}</style></div><div class="cc-1kny"><style type="text/css">.crisp-client .cc-kv6t {
+  z-index: 1000000;
+}
+</style></div></div><div id="crisp-chatbox" lang="en" dir="ltr" translate="no" data-blocked="false" data-lock-maximized="false" data-last-operator-face="false" data-availability-tooltip="false" data-hide-vacation="false" data-hide-on-away="false" data-hide-on-mobile="false" data-position-reverse="false" data-full-view="false" data-small-view="false" data-large-view="true" data-availability="online" data-is-activity-ongoing="false" data-was-availability-online="true" data-has-local-messages="false" class="cc-kv6t"><div class="cc-1xry cc-1gmp"><div data-visible="false" data-chat-status="ongoing" class="cc-ge4v" data-cshid="1c135a2a-e485-2601-564b-475d76c7ad88" style="width: 400px !important;"><div class="cc-bdff"><div data-tile="squares" data-with-website-name="true" class="cc-x32x cc-1ada cc-1c1d cc-1ybb" data-cshid="22b37e04-2afc-a8fd-8e64-270c80f55a48"><span class="cc-1j74"><span class="cc-furf cc-he6y cc-1xll"><span style="background-image: url(&quot;https://image.crisp.chat/avatar/operator/592cc340-4ead-45aa-b0b3-7a1466ab8ef7/240/?1618268276619&quot;) !important;" class="cc-1do6 cc-wsm4"></span><span data-has-name="true" class="cc-1wwd cc-1tzl cc-1ntm cc-1wsx"><span class="cc-1ybw cc-h1yx cc-kgeu">Doug</span></span></span></span><span class="cc-1k9z"><span class="cc-2dnw cc-6zjc cc-151q">Questions? Chat with me!</span><span class="cc-1wea cc-6zjc cc-151q"><span data-type="operator_name" class="cc-155a cc-txwe cc-6zjc">Doug</span><span data-type="website_from" class="cc-155a cc-6zjc">from</span><span data-type="website_name" class="cc-155a cc-6zjc">Doug Perez Portfolio</span><span class="cc-iuse"></span></span><span class="cc-h139"><span data-id="online" class="cc-1k4b cc-6zjc"><span data-type="default" data-duration="15651" class="cc-2r1p cc-6zjc cc-kgeu">Typically replies under a few seconds</span><span data-type="ongoing" class="cc-2r1p cc-6zjc cc-kgeu">Support is online</span></span><span data-id="away" class="cc-1k4b cc-6zjc"><span data-type="default" data-date-iso="2021-04-12T08:04:34.834Z" data-date-format="Was last active %1s" data-date-watch="true" class="cc-2r1p cc-12fb cc-6zjc cc-kgeu">Was last active 4/12/2021</span><span data-type="ongoing" class="cc-2r1p cc-6zjc cc-kgeu">Support is away</span></span><span class="cc-iuse"></span></span><span class="cc-cqnw"><a data-channel="email" href="mailto:%22Doug%20Perez%20Portfolio%22%3Cs.d1a76463ae6a5800.i@douglaswperez.on.crisp.email%3E" target="_parent" rel="noopener noreferrer" class="cc-1qlt cc-1xll cc-3x4f" data-cshid="718c1412-8691-ba9b-ff58-64108999ede0"><span class="cc-1tzl cc-68z9 cc-sc6q"><span class="cc-h1yx cc-kgeu">Continue on Email</span></span></a><span class="cc-iuse"></span></span></span><span class="cc-wdhl cc-1f87"><span class="cc-1asz"></span></span></div><span class="cc-uryd"></span></div><div data-has-health="false" data-has-offline="false" class="cc-qqzz" data-cshid="92ccb357-fc2c-72a0-f17d-653ff81d7fea" data-has-alert-warn_reply="true" style="height: 580px !important;"><div data-refer-hide-space="false" class="cc-5b24"><div class="cc-41gl cc-1vnk cc-2ydi"><div class="cc-15u8"><span class="cc-18rr cc-ic7l"></span><span class="cc-1mjm"><span class="cc-qn0f cc-151q">Network offline. Reconnecting...</span><span class="cc-vks0 cc-151q">Offline. You were inactive for some time.</span><span class="cc-10sl cc-151q">Offline. Please reload the page.</span><span class="cc-1ji5 cc-kgeu">No messages can be received or sent for now.</span><span class="cc-1eac cc-kgeu">Send a message to reconnect to the chat.</span></span></div></div><div class="cc-1pvj cc-y6ot" style="margin-bottom: 0px !important;"><div class="cc-1v5j" data-cshid="f2d3e553-a6c2-1382-28ba-54f9bbcf2a6b"><div class="cc-3lvj"><div data-day="none" data-month="none" data-year="none" class="cc-7bf0"><div class="cc-12zj"><div data-from="operator" data-user-marker="d781a8dc-63eb-4a7d-8165-e5cbf8eb8c8c" class="cc-w6n9 wp-exclude-emoji"><div data-from="operator" data-date-iso="" data-fingerprint="$welcome" data-type="text" data-is-preview="false" class="cc-b3wa"><span class="cc-1s5n cc-he6y cc-1xll"><span style="background-image: url(&#39;https://image.crisp.chat/avatar/website/d781a8dc-63eb-4a7d-8165-e5cbf8eb8c8c/240/?1618268276619&#39;) !important;" class="cc-1jl7 cc-wsm4"></span><span class="cc-1tzl cc-1ntm cc-1wsx"><span class="cc-h1yx cc-kgeu">Doug Perez Portfolio</span></span></span><span class="cc-xfpr cc-1xll"><span class="cc-1yfu cc-1lut cc-1ada"><span class="cc-xtol cc-kgeu cc-6zjc">Hello! How can I help you? <span data-size="small" data-name="small-smile" class="cc-tkf1"></span></span><span class="cc-iuse"></span></span><span class="cc-iuse"></span></span><span class="cc-iuse"></span></div><span class="cc-iuse"></span></div></div></div><div data-day="5" data-month="4" data-year="2021" class="cc-7bf0"><div class="cc-1pll"><span class="cc-1p79 cc-151q">Monday, 5 April</span></div><div class="cc-12zj"><div data-from="visitor" data-user-marker="session" class="cc-w6n9 wp-exclude-emoji"><div data-from="visitor" data-date-iso="2021-04-05T23:19:11.253Z" data-fingerprint="161766475109991" data-type="text" data-is-preview="false" class="cc-b3wa"><span class="cc-xfpr cc-1xll"><span class="cc-1yfu cc-1lut"><span class="cc-xtol cc-kgeu">Hello</span><span class="cc-iuse"></span></span><span class="cc-iqjx cc-1tzl cc-68z9 cc-sc6q"><span class="cc-h1yx cc-kgeu"><span data-date-iso="2021-04-05T23:19:11.253Z" data-date-watch="true" class="cc-1k3j">4/5/2021</span><span class="cc-1kje"></span></span></span><span class="cc-iuse"></span></span><span class="cc-iuse"></span><span class="cc-1did"><span class="cc-k5zk" style="display: none !important;"><span class="cc-crgu"></span><span class="cc-1u5t cc-kgeu">Read</span><span class="cc-iuse"></span></span><span class="cc-iuse"></span></span><a role="button" class="cc-pus6"><span class="cc-fnu6 cc-151q">Failed to send. Retry?</span><span class="cc-1pp5 cc-ic7l"></span><span class="cc-iuse"></span></a><span class="cc-iuse"></span></div><span class="cc-iuse"></span><div data-from="visitor" data-date-iso="2021-04-05T23:21:49.022Z" data-fingerprint="161766490886221" data-type="text" data-is-preview="false" class="cc-b3wa"><span class="cc-xfpr cc-1xll"><span class="cc-1yfu cc-1lut"><span class="cc-xtol cc-kgeu">Herro</span><span class="cc-iuse"></span></span><span class="cc-iqjx cc-1tzl cc-68z9 cc-sc6q"><span class="cc-h1yx cc-kgeu"><span data-date-iso="2021-04-05T23:21:49.022Z" data-date-watch="true" class="cc-1k3j">4/5/2021</span><span class="cc-1kje"></span></span></span><span class="cc-iuse"></span></span><span class="cc-iuse"></span><span class="cc-1did"><span class="cc-k5zk" style="display: none !important;"><span class="cc-crgu"></span><span class="cc-1u5t cc-kgeu">Read</span><span class="cc-iuse"></span></span><span class="cc-iuse"></span></span><a role="button" class="cc-pus6"><span class="cc-fnu6 cc-151q">Failed to send. Retry?</span><span class="cc-1pp5 cc-ic7l"></span><span class="cc-iuse"></span></a><span class="cc-iuse"></span></div><span class="cc-iuse"></span></div><div data-from="operator" data-user-marker="592cc340-4ead-45aa-b0b3-7a1466ab8ef7" class="cc-w6n9 wp-exclude-emoji"><div data-from="operator" data-date-iso="2021-04-05T23:21:57.159Z" data-fingerprint="399856788" data-type="text" data-is-preview="false" class="cc-b3wa"><span class="cc-1s5n cc-he6y cc-1xll"><span style="background-image: url(&#39;https://image.crisp.chat/avatar/operator/592cc340-4ead-45aa-b0b3-7a1466ab8ef7/240/?1618268276619&#39;) !important;" class="cc-1jl7 cc-wsm4"></span><span class="cc-1tzl cc-1ntm cc-1wsx"><span class="cc-h1yx cc-kgeu">Doug</span></span></span><span class="cc-xfpr cc-1xll"><span class="cc-1yfu cc-1lut cc-1ada"><span class="cc-xtol cc-kgeu cc-6zjc">Hello</span><span class="cc-iuse"></span></span><span class="cc-iqjx cc-1tzl cc-68z9 cc-sc6q"><span class="cc-h1yx cc-kgeu"><span data-date-iso="2021-04-05T23:21:57.159Z" data-date-watch="true" class="cc-1k3j">4/5/2021</span><span class="cc-1kje"></span></span></span><span class="cc-iuse"></span></span><span class="cc-iuse"></span></div><span class="cc-iuse"></span></div><div data-from="visitor" data-user-marker="session" class="cc-w6n9 wp-exclude-emoji"><div data-from="visitor" data-date-iso="2021-04-05T23:23:06.588Z" data-fingerprint="161766498643641" data-type="text" data-is-preview="false" class="cc-b3wa"><span class="cc-xfpr cc-1xll"><span class="cc-1yfu cc-1lut"><span class="cc-xtol cc-kgeu">jkhhkj</span><span class="cc-iuse"></span></span><span class="cc-iqjx cc-1tzl cc-68z9 cc-sc6q"><span class="cc-h1yx cc-kgeu"><span data-date-iso="2021-04-05T23:23:06.588Z" data-date-watch="true" class="cc-1k3j">4/5/2021</span><span class="cc-1kje"></span></span></span><span class="cc-iuse"></span></span><span class="cc-iuse"></span><span class="cc-1did"><span class="cc-k5zk" style="display: none !important;"><span class="cc-crgu"></span><span class="cc-1u5t cc-kgeu">Read</span><span class="cc-iuse"></span></span><span class="cc-iuse"></span></span><a role="button" class="cc-pus6"><span class="cc-fnu6 cc-151q">Failed to send. Retry?</span><span class="cc-1pp5 cc-ic7l"></span><span class="cc-iuse"></span></a><span class="cc-iuse"></span></div><span class="cc-iuse"></span><div data-from="visitor" data-date-iso="2021-04-05T23:23:19.306Z" data-fingerprint="161766499915040" data-type="text" data-is-preview="false" class="cc-b3wa"><span class="cc-xfpr cc-1xll"><span class="cc-1yfu cc-1lut"><span class="cc-xtol cc-kgeu">kjhhkj</span><span class="cc-iuse"></span></span><span class="cc-iqjx cc-1tzl cc-68z9 cc-sc6q"><span class="cc-h1yx cc-kgeu"><span data-date-iso="2021-04-05T23:23:19.306Z" data-date-watch="true" class="cc-1k3j">4/5/2021</span><span class="cc-1kje"></span></span></span><span class="cc-iuse"></span></span><span class="cc-iuse"></span><span class="cc-1did"><span class="cc-k5zk" style="display: none !important;"><span class="cc-crgu"></span><span class="cc-1u5t cc-kgeu">Read</span><span class="cc-iuse"></span></span><span class="cc-iuse"></span></span><a role="button" class="cc-pus6"><span class="cc-fnu6 cc-151q">Failed to send. Retry?</span><span class="cc-1pp5 cc-ic7l"></span><span class="cc-iuse"></span></a><span class="cc-iuse"></span></div><span class="cc-iuse"></span></div><div data-from="operator" data-user-marker="592cc340-4ead-45aa-b0b3-7a1466ab8ef7" class="cc-w6n9 wp-exclude-emoji"><div data-from="operator" data-date-iso="2021-04-05T23:23:29.805Z" data-fingerprint="142498417" data-type="text" data-is-preview="false" class="cc-b3wa"><span class="cc-1s5n cc-he6y cc-1xll"><span style="background-image: url(&#39;https://image.crisp.chat/avatar/operator/592cc340-4ead-45aa-b0b3-7a1466ab8ef7/240/?1618268276619&#39;) !important;" class="cc-1jl7 cc-wsm4"></span><span class="cc-1tzl cc-1ntm cc-1wsx"><span class="cc-h1yx cc-kgeu">Doug</span></span></span><span class="cc-xfpr cc-1xll"><span class="cc-1yfu cc-1lut cc-1ada"><span class="cc-xtol cc-kgeu cc-6zjc">Testing</span><span class="cc-iuse"></span></span><span class="cc-iqjx cc-1tzl cc-68z9 cc-sc6q"><span class="cc-h1yx cc-kgeu"><span data-date-iso="2021-04-05T23:23:29.805Z" data-date-watch="true" class="cc-1k3j">4/5/2021</span><span class="cc-1kje"></span></span></span><span class="cc-iuse"></span></span><span class="cc-iuse"></span></div><span class="cc-iuse"></span></div><div data-from="visitor" data-user-marker="session" class="cc-w6n9 wp-exclude-emoji"><div data-from="visitor" data-date-iso="2021-04-05T23:24:31.631Z" data-fingerprint="161766507148018" data-type="text" data-is-preview="false" class="cc-b3wa"><span class="cc-xfpr cc-1xll"><span class="cc-1yfu cc-1lut"><span class="cc-xtol cc-kgeu">Test  message</span><span class="cc-iuse"></span></span><span class="cc-iqjx cc-1tzl cc-68z9 cc-sc6q"><span class="cc-h1yx cc-kgeu"><span data-date-iso="2021-04-05T23:24:31.631Z" data-date-watch="true" class="cc-1k3j">4/5/2021</span><span class="cc-1kje"></span></span></span><span class="cc-iuse"></span></span><span class="cc-iuse"></span><span class="cc-1did"><span class="cc-k5zk" style="display: none !important;"><span class="cc-crgu"></span><span class="cc-1u5t cc-kgeu">Read</span><span class="cc-iuse"></span></span><span class="cc-iuse"></span></span><a role="button" class="cc-pus6"><span class="cc-fnu6 cc-151q">Failed to send. Retry?</span><span class="cc-1pp5 cc-ic7l"></span><span class="cc-iuse"></span></a><span class="cc-iuse"></span></div><span class="cc-iuse"></span><div data-from="visitor" data-date-iso="2021-04-05T23:25:22.213Z" data-fingerprint="161766512206417" data-type="text" data-is-preview="false" class="cc-b3wa"><span class="cc-xfpr cc-1xll"><span class="cc-1yfu cc-1lut"><span class="cc-xtol cc-kgeu">hbkhk</span><span class="cc-iuse"></span></span><span class="cc-iqjx cc-1tzl cc-68z9 cc-sc6q"><span class="cc-h1yx cc-kgeu"><span data-date-iso="2021-04-05T23:25:22.213Z" data-date-watch="true" class="cc-1k3j">4/5/2021</span><span class="cc-1kje"></span></span></span><span class="cc-iuse"></span></span><span class="cc-iuse"></span><span class="cc-1did"><span class="cc-k5zk" style="display: inline-block !important;"><span class="cc-crgu"></span><span class="cc-1u5t cc-kgeu">Read</span><span class="cc-iuse"></span></span><span class="cc-iuse"></span></span><a role="button" class="cc-pus6"><span class="cc-fnu6 cc-151q">Failed to send. Retry?</span><span class="cc-1pp5 cc-ic7l"></span><span class="cc-iuse"></span></a><span class="cc-iuse"></span></div><span class="cc-iuse"></span></div><div data-from="operator" data-user-marker="592cc340-4ead-45aa-b0b3-7a1466ab8ef7" class="cc-w6n9 wp-exclude-emoji"><div data-from="operator" data-date-iso="2021-04-05T23:25:30.405Z" data-fingerprint="146756513" data-type="text" data-is-preview="false" class="cc-b3wa"><span class="cc-1s5n cc-he6y cc-1xll"><span style="background-image: url(&#39;https://image.crisp.chat/avatar/operator/592cc340-4ead-45aa-b0b3-7a1466ab8ef7/240/?1618268276619&#39;) !important;" class="cc-1jl7 cc-wsm4"></span><span class="cc-1tzl cc-1ntm cc-1wsx"><span class="cc-h1yx cc-kgeu">Doug</span></span></span><span class="cc-xfpr cc-1xll"><span class="cc-1yfu cc-1lut cc-1ada"><span class="cc-xtol cc-kgeu cc-6zjc">Can you see beefy</span><span class="cc-iuse"></span></span><span class="cc-iqjx cc-1tzl cc-68z9 cc-sc6q"><span class="cc-h1yx cc-kgeu"><span data-date-iso="2021-04-05T23:25:30.405Z" data-date-watch="true" class="cc-1k3j">4/5/2021</span><span class="cc-1kje"></span></span></span><span class="cc-iuse"></span></span><span class="cc-iuse"></span></div><span class="cc-iuse"></span><div data-from="operator" data-date-iso="2021-04-06T04:33:22.594Z" data-fingerprint="633348589" data-type="text" data-is-preview="false" class="cc-b3wa"><span class="cc-1s5n cc-he6y cc-1xll"><span style="background-image: url(&#39;https://image.crisp.chat/avatar/operator/592cc340-4ead-45aa-b0b3-7a1466ab8ef7/240/?1618268276619&#39;) !important;" class="cc-1jl7 cc-wsm4"></span><span class="cc-1tzl cc-1ntm cc-1wsx"><span class="cc-h1yx cc-kgeu">Doug</span></span></span><span class="cc-xfpr cc-1xll"><span class="cc-1yfu cc-1lut cc-1ada"><span class="cc-xtol cc-kgeu cc-6zjc">Hi there!</span><span class="cc-iuse"></span></span><span class="cc-iqjx cc-1tzl cc-68z9 cc-sc6q"><span class="cc-h1yx cc-kgeu"><span data-date-iso="2021-04-06T04:33:22.594Z" data-date-watch="true" class="cc-1k3j">4/5/2021</span><span class="cc-1kje"></span></span></span><span class="cc-iuse"></span></span><span class="cc-iuse"></span></div><span class="cc-iuse"></span><div data-from="operator" data-date-iso="2021-04-06T04:33:47.805Z" data-fingerprint="469254078" data-type="text" data-is-preview="false" class="cc-b3wa"><span class="cc-1s5n cc-he6y cc-1xll"><span style="background-image: url(&#39;https://image.crisp.chat/avatar/operator/592cc340-4ead-45aa-b0b3-7a1466ab8ef7/240/?1618268276619&#39;) !important;" class="cc-1jl7 cc-wsm4"></span><span class="cc-1tzl cc-1ntm cc-1wsx"><span class="cc-h1yx cc-kgeu">Doug</span></span></span><span class="cc-xfpr cc-1xll"><span class="cc-1yfu cc-1lut cc-1ada"><span class="cc-xtol cc-kgeu cc-6zjc">Let me know if you have any questions about my portfolio or work!</span><span class="cc-iuse"></span></span><span class="cc-iqjx cc-1tzl cc-68z9 cc-sc6q"><span class="cc-h1yx cc-kgeu"><span data-date-iso="2021-04-06T04:33:47.805Z" data-date-watch="true" class="cc-1k3j">4/5/2021</span><span class="cc-1kje"></span></span></span><span class="cc-iuse"></span></span><span class="cc-iuse"></span></div><span class="cc-iuse"></span></div><div data-from="operator" data-user-marker="d781a8dc-63eb-4a7d-8165-e5cbf8eb8c8c" class="cc-w6n9 wp-exclude-emoji"><div data-from="operator" data-date-iso="" data-fingerprint="$identity" data-type="field" data-is-preview="false" class="cc-b3wa"><span class="cc-1s5n cc-he6y cc-1xll"><span style="background-image: url(&#39;https://image.crisp.chat/avatar/website/d781a8dc-63eb-4a7d-8165-e5cbf8eb8c8c/240/?1618268276619&#39;) !important;" class="cc-1jl7 cc-wsm4"></span><span class="cc-1tzl cc-1ntm cc-1wsx"><span class="cc-h1yx cc-kgeu">Doug Perez Portfolio</span></span></span><span class="cc-xfpr cc-1xll"><span class="cc-1yfu cc-1lut cc-1ada"><span class="cc-xtol cc-kgeu cc-6zjc"><span data-has-value="false" class="cc-1lj6 cc-143v"><a role="button" class="cc-2t7n cc-4xbu" data-cshid="4a207cd9-ca41-ba34-ac67-b85859c8d27f"></a><span class="cc-rxbq cc-1afx">What is your email address?</span><form action="http://localhost:8001/#" method="post" class="cc-hp1x" data-cshid="12800c27-f8bf-61e1-3f61-f1aa64a90b46"><input type="text" name="message_field_identity-email" placeholder="Enter your email address..." autocapitalize="off" autocorrect="off" spellcheck="false" class="cc-1t9k cc-clw4 cc-kgeu"><a role="button" class="cc-fosr cc-4xbu cc-151q" data-cshid="9503e39d-8323-6ae5-bc88-73559a75d14b">OK</a></form></span></span><span class="cc-iuse"></span></span><span class="cc-iuse"></span></span><span class="cc-iuse"></span></div><span class="cc-iuse"></span></div></div></div></div><div class="cc-192e"></div></div></div><div class="cc-2uua"><div class="cc-1hl5" data-cshid="28049021-3f3e-bdb4-4b86-00b9803899e9"></div><div class="cc-1b7n cc-1aev"><div class="cc-16re"><div class="cc-1toe cc-1ada"></div><div class="cc-1ehq cc-151q">Send a file</div></div></div></div><div data-has-animation="true" class="cc-1tha" data-cshid="e0185d2d-0c8e-22ca-56fc-2f74bace81c1" style="margin-bottom: 0px !important;"><div class="cc-batn cc-ve3u"><div class="cc-h39l"><a role="button" data-type="smiley" class="cc-mxq4 cc-183m cc-151q" data-cshid="3b60afae-d9e3-40b0-795b-353710d87760">Smileys</a><a role="button" data-type="gif" class="cc-mxq4 cc-183m cc-151q" data-cshid="f4ae253a-8b33-32de-d27e-0d5b04a260bb">GIFs</a></div><div class="cc-vcjp"><div data-type="smiley" class="cc-5ftt"><span class="cc-yb0h"><span data-size="large" data-name="angry" data-value=":@" class="cc-dnqb cc-tkf1" data-cshid="e72710a0-7b28-49b6-4817-d3a8188bbe57"></span><span data-size="large" data-name="blushing" data-value=":$" class="cc-dnqb cc-tkf1" data-cshid="34f826c8-23a4-fe1f-9732-4300670613a7"></span><span data-size="large" data-name="confused" data-value="x)" class="cc-dnqb cc-tkf1" data-cshid="4e9a277d-230f-de15-f7dc-af3462988d6c"></span><span data-size="large" data-name="cool" data-value="8)" class="cc-dnqb cc-tkf1" data-cshid="23fbf76d-b7c7-03ed-ed0b-f4f2ffd3e74a"></span><span data-size="large" data-name="crying" data-value=":&#39;(" class="cc-dnqb cc-tkf1" data-cshid="c2632ba1-70e1-e9f1-5fbc-2d883e390c22"></span><span data-size="large" data-name="embarrased" data-value=":/" class="cc-dnqb cc-tkf1" data-cshid="4efb685e-4b68-d477-ce71-2997c7bbd285"></span><span data-size="large" data-name="heart" data-value="&lt;3" class="cc-dnqb cc-tkf1" data-cshid="5f75cead-1f7e-630f-be77-2bfca633be0e"></span><span data-size="large" data-name="laughing" data-value=":&#39;D" class="cc-dnqb cc-tkf1" data-cshid="28865061-108f-833c-ce39-4becfc1c0e45"></span><span data-size="large" data-name="sad" data-value=":(" class="cc-dnqb cc-tkf1" data-cshid="a1f95127-b9af-51c8-d00d-b190026910d7"></span><span data-size="large" data-name="sick" data-value=":S" class="cc-dnqb cc-tkf1" data-cshid="d636ce08-f13e-de4a-02cc-0a4b21f9b1a4"></span><span data-size="large" data-name="small-smile" data-value=":)" class="cc-dnqb cc-tkf1" data-cshid="57cd96e9-1ef8-1ed1-550a-3838f95dd365"></span><span data-size="large" data-name="big-smile" data-value=":D" class="cc-dnqb cc-tkf1" data-cshid="55bf91f3-fa27-e6ad-796f-a9adaca4ae5f"></span><span data-size="large" data-name="thumbs-up" data-value="+1" class="cc-dnqb cc-tkf1" data-cshid="c938de39-7156-ec29-de29-a0cc94b71477"></span><span data-size="large" data-name="surprised" data-value=":o" class="cc-dnqb cc-tkf1" data-cshid="3c8606ec-177e-3d7e-c2b5-5fd2147bb783"></span><span data-size="large" data-name="tongue" data-value=":P" class="cc-dnqb cc-tkf1" data-cshid="626f3769-3023-a88c-c5db-972fb8eb1e9a"></span><span data-size="large" data-name="winking" data-value=";)" class="cc-dnqb cc-tkf1" data-cshid="72216e1e-11a3-85b6-1bb2-b8f0d27bcfb0"></span></span></div><div data-type="gif" data-has-search="false" class="cc-5ftt"><span class="cc-r00v"><span data-action="search" class="cc-z5zp"><a role="button" class="cc-1k8e" data-cshid="8a9a20fd-f04e-da4c-8667-c3f93d872a97"></a><input type="text" name="gif_search" placeholder="Find GIFs..." maxlength="25" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" class="cc-19m8 cc-1lut cc-kgeu" data-cshid="5c16db2b-18f2-992d-a890-add85ccac5d9"></span></span><span class="cc-yb0h"></span><span class="cc-1ydc"><span data-notice="no_results" class="cc-bj9g cc-151q">No results. Try another search.</span></span></div></div></div></div><div class="cc-14ou"><a role="button" data-type="new_messages" class="cc-sel9" data-cshid="6b56b1f0-e190-fa62-c234-2c91baceed32" style="display: none !important;"><span class="cc-1mtf" style="margin-bottom: 0px !important;"><span class="cc-tez9"></span><span class="cc-1691 cc-151q">There are new messages below. Click to see.</span></span></a><a role="button" data-type="warn_reply" class="cc-sel9" data-cshid="7ef4b98a-6245-ce42-c0a3-13b885b9964e" style="display: inline-block !important;"><div class="cc-1mtf" style="margin-bottom: 0px !important;"><span class="cc-1691 cc-151q">Click to set your email to get notifications.</span></div></a><a role="button" data-type="email_invalid" class="cc-sel9" data-cshid="bbad73fd-8ab8-bf69-fb30-5d9476571c0f" style="display: none !important;"><div class="cc-1mtf" style="margin-bottom: 0px !important;"><span class="cc-1691 cc-151q">You mistyped your email, can you check it?</span></div></a><div data-type="wait_reply" class="cc-sel9" style="display: none !important;"><div class="cc-1mtf" style="margin-bottom: 0px !important;"><span class="cc-1691 cc-151q"><span data-id="online" class="cc-ripp">Thanks! We should reply in a few moments.</span><span data-id="away" class="cc-ripp">We are not online. We will email you back.</span></span></div></div></div><div data-has-value="false" data-is-locked="false" data-retain-lock="false" class="cc-g7iw cc-2ydi" style=""><form name="form_message" action="http://localhost:8001/#" method="post" class="cc-1uz4" data-cshid="e9ee7c44-a531-df99-03ed-d69e2467a705"><textarea name="message" placeholder="Compose your message..." cols="20" rows="1" dir="auto" autocapitalize="off" autocomplete="off" data-has-selection-range="data-has-selection-range" class="cc-pjpe cc-1lut cc-2n8m cc-kgeu" data-cshid="bb2f666c-cb58-9297-9193-bd084bbd1e22" style="width: 301px !important;"></textarea></form><div class="cc-1cxr"><div class="cc-t0eq"><div data-type="smiley" data-state="none" class="cc-1y2e" data-cshid="03737fab-df2f-c7b1-f015-0c5847426ed0"><span class="cc-1926 cc-1xll"><span class="cc-1tzl cc-68z9 cc-1wsx"><span class="cc-h1yx cc-kgeu">Insert an emoji</span></span><span data-variant="inactive" class="cc-1oxy cc-11vl cc-1aev"><span class="cc-7ebe"><span class="cc-nqfv cc-8kb8 cc-ew5j"></span><span class="cc-kpmf cc-8kb8 cc-18sf"></span></span></span><span data-variant="active" class="cc-1oxy cc-11vl cc-1ada cc-1aev"><span class="cc-7ebe"><span class="cc-nqfv cc-8kb8 cc-1ada"></span><span class="cc-kpmf cc-8kb8 cc-ew5j"></span></span></span></span></div><div data-type="file" data-state="none" class="cc-1y2e"><span class="cc-1926 cc-1xll"><span class="cc-1tzl cc-68z9 cc-1wsx"><span class="cc-h1yx cc-kgeu">Send a file</span></span><input type="file" name="attach_file" title="" multiple="multiple" class="cc-do6v" data-cshid="aff42d10-4680-459a-1be5-19e51ac2ec8f"><span class="cc-1oxy cc-1e7d cc-1aev cc-8kb8 cc-ew5j"></span><span class="cc-1wj3"><span class="cc-1uc7 cc-1nph cc-1o96"></span></span></span></div><span class="cc-13gu"><span class="cc-br7s cc-vuur" data-cshid="e0206e74-c23b-fcd3-f5cb-23afcd3477f5"><span class="cc-hf7r"></span></span></span><span class="cc-iuse"></span></div><span class="cc-iuse"></span></div></div><div class="cc-19cg cc-ve3u"><div class="cc-z2iy"><a href="https://crisp.chat/livechat/?ref=chatbox&amp;domain=www.douglaswperez.com&amp;name=Doug%20Perez%20Portfolio" target="_blank" rel="noopener noreferrer" class="cc-13dp"><span class="cc-3f6y cc-kgeu">We run on</span><span class="cc-1204"></span><span class="cc-3f6y cc-37qh cc-151q">Crisp</span><span class="cc-iuse"></span></a><span class="cc-iuse"></span></div><span class="cc-iuse"></span></div></div></div></div><a data-visible="false" data-is-failure="false" role="button" class="cc-unoo" data-cshid="3a8ce868-2a1d-2320-ce7c-3bbd953cbee2" data-maximized="false"><span class="cc-1c9v"><span data-id="new_messages" class="cc-1bue" style="display: none !important;"><span class="cc-t81c"><span class="cc-86w0" style="display: none !important;"><span class="cc-6uue cc-hy0f"></span></span><span class="cc-2zuy"></span></span><span class="cc-1bcp"><span class="cc-1s28"><span data-for-id="new_messages" class="cc-1div cc-kgeu">Compose your reply...<span class="cc-1hs9"><span class="cc-1q5i"><span data-variant="inactive" class="cc-1oxy cc-11vl"><span class="cc-7ebe"><span class="cc-nqfv"></span><span class="cc-kpmf"></span></span></span><span class="cc-1oxy cc-1e7d"></span></span></span></span><span class="cc-iuse"></span></span></span></span></span><span class="cc-7doi cc-1ada"><span data-id="chat_opened" class="cc-1iv2"><span data-is-ongoing="true" class="cc-15mo"><span class="cc-10ml cc-he6y"><span class="cc-1dx3 cc-wsm4" style="background-image: url(&quot;https://image.crisp.chat/avatar/operator/592cc340-4ead-45aa-b0b3-7a1466ab8ef7/240/?1618268276619&quot;) !important;"></span></span><span class="cc-1j7n"></span><span class="cc-12u5 cc-151q" style="display: none !important;">0</span></span></span></span></a><span data-visible="false" data-visible-subtle="false" class="cc-yqwh"><span class="cc-je17"></span></span></div></div></div></body><div id="huntr-react-container-2"></div></html>

@@ -44,7 +44,7 @@ const About = () => {
                 <br />
                 <p className="about-wrapper__info-text">
                   <p>
-                    <b className="tech-title">Technologies</b>
+                    <b className="tech-title">TECHNOLOGIES</b>
                   </p>
                   <div className="tech-list">
                     <strong>
