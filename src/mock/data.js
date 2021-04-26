@@ -16,6 +16,7 @@ export const heroData = {
 };
 
 // ABOUT DATA
+//NOTE ACTUAL TEXT IS IN ABOUT SECTION
 export const aboutData = {
   img: 'profileXL1.jpg',
   paragraphOne:

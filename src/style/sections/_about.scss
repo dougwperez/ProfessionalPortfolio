@@ -51,6 +51,7 @@
       height: 100%;
       justify-content: center;
       flex-direction: column;
+      line-height: 250%;
 
       @include respond(phone) {
         align-items: center;

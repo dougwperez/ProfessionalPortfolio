@@ -48,13 +48,19 @@ const About = () => {
                   </p>
                   <div className="tech-list">
                     <strong>
-                      {paragraphTwo}
-                      <br />
-                      <br />
-                      {paragraphThree}
-                      <br />
-                      <br />
-                      {paragraphFour}
+                      <p>
+                        <strong>Front End:</strong> JavaScript ES6, HTML5, React.js, Redux, React
+                        Native, Gatsby, jQuery, Styled Components, Sass.
+                      </p>
+
+                      <p>
+                        <strong>Back End:</strong> Node.js, Express, Nginx, GraphQL, MongoDB,
+                        PostgreSQL, MySQL, SQLite, REST API, Redis.
+                      </p>
+                      <p>
+                        <strong>DevOps & Testing:</strong> AWS EC2, Netlify, Docker, Heroku, Git,
+                        Axios, Babel, Webpack, Jest, Enzyme, Mocha, Chai, Loader.io, K6.
+                      </p>
                     </strong>
                   </div>
                 </p>

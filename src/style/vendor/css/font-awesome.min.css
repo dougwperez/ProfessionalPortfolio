@@ -633,11 +633,13 @@
   color: black;
   size: 50%;
 }
-.fa-github1:hoover {
+
+/* .testfab:hover .fa-github1:hover {
   content: '\f09b';
   color: purple;
   size: 50%;
-}
+} */
+
 .fa-unlock:before {
   content: '\f09c';
 }
