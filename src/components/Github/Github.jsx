@@ -5,7 +5,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import GitHubCalendar from 'react-github-calendar';
-import ReactTooltip from 'react-tooltip';
+// import ReactTooltip from 'react-tooltip';
 
 const Github = () => {
   // const { projects } = useContext(PortfolioContext);
@@ -59,7 +59,7 @@ const Github = () => {
               blockMargin={4}
               fontSize={16}
             >
-              <ReactTooltip delayShow={50} html />
+              {/* <ReactTooltip delayShow={50} html /> */}
             </GitHubCalendar>
             <br />
             <br />
