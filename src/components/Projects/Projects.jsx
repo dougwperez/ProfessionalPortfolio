@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+import GitHub from '../Github/Github.jsx';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -26,7 +27,7 @@ const Projects = () => {
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="Projects" />
+          <Title title="My Projects" />
           <br />
           <br />
           {/* <div class="glass">
@@ -124,6 +125,7 @@ const Projects = () => {
           })}
         </div>
       </Container>
+      <GitHub />
     </section>
   );
 };

@@ -35,6 +35,16 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project.png',
+    title: 'MyBuyTech Store',
+    info:
+      'A custom made e-commerce site that uses a MERN stack framework. The e-store features high end consumer electonics, PayPal and Visa/Mastercard integration, and user authentication. Users can customize their accounts, make purchases, and leave product reviews. Site architecture relies heavily on Redux.',
+    info2: '',
+    url: 'https://mybuytech.herokuapp.com/',
+    repo: 'https://github.com/dougwperez/E-Mai-ecommerce', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'project.png',
     title: 'JS Unscramble',
     info:
       'A MERN stack web app that gamifies the process of learning JS fundamentals, inspired by Duolingo. Users are presented with a random JavaScript toy problem, with a scrambled solution. The objective is to unscramble the solution.',
