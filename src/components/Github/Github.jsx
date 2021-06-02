@@ -70,7 +70,7 @@ const Github = () => {
               id="viewGithub"
               href="https://github.com/dougwperez"
             >
-              View Github Profile
+              View GitHub Profile
             </a>
             {/* <IframeResizer dfs
               log
