@@ -2,6 +2,7 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
+import project0Gif from './project0hd.gif';
 import project1Gif from './project1hd.gif';
 import project2Gif from './project2hd.gif';
 import project3Gif from './project3hd.gif';
@@ -38,6 +39,27 @@ const ProjectImg = ({ filename, alt }) => (
 
       const imageFluid = image.node.childImageSharp.fluid;
       console.log('width', width);
+
+      if (filename === 'project0.jpeg' && width < 740) {
+        return (
+          <imgContainer>
+            <Img alt={alt} fluid={imageFluid} />
+          </imgContainer>
+        );
+      }
+
+      if (filename === 'project0.jpeg' && width > 740) {
+        return (
+          <imgContainer>
+            <img
+              className="animated-gif"
+              src={project0Gif}
+              alt="JS Unscramble live demo"
+              fluid={imageFluid}
+            />
+          </imgContainer>
+        );
+      }
 
       if (filename === 'project.png' && width < 740) {
         return (

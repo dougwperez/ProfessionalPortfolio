@@ -34,7 +34,7 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.png',
+    img: 'project0.jpeg',
     title: 'MyBuyTech Store',
     info:
       'A custom made e-commerce site that uses a MERN stack framework. The e-store features high end consumer electonics, PayPal and Visa/Mastercard integration, and user authentication. Users can customize their accounts, make purchases, and leave product reviews. Site architecture relies heavily on Redux.',

@@ -23,9 +23,9 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="cta-btn cta-btn--resume"
-              href={email ? `mailto:${email}` : 'https://github.com/cobidev/react-simplefolio'}
+              href={'https://calendly.com/perezcpt/30min'}
             >
-              {btn || "Let's Talk"}
+              {btn || 'SCHEDULE A CALL'}
             </a>
           </div>
         </Fade>
