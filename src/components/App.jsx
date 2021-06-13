@@ -39,7 +39,7 @@ function App() {
         <nav>
           <ul className="sticky-menu-options">
             <li className="fullTitle">
-              <span className="siteTitle">{' Doug Perez : '}</span>
+              <span className="siteTitle">{' Doug Perez '}</span>
               <span className="JobTitleinTitle">{'Full Stack Engineer'}</span>
             </li>
             <li>
