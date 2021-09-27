@@ -49,15 +49,16 @@ const About = () => {
                   <div className="tech-list">
                     <strong>
                       <p>
-                        <strong>Front End:</strong> React, React Native, Redux, MobX, Gatsby, TypeScript, HTML5, jQuery, Styled Components, Less, Sass.
+                        <strong>Front End:</strong> React, React Native, Redux, MobX, Gatsby, TypeScript, HTML5, 
+                        jQuery, Styled Components, Less, Sass.
                       </p>
 
                       <p>
-                        <strong>Back End:</strong> Node.js, Express, Nginx, GraphQL, MongoDB,
-                        PostgreSQL, MySQL, SQLite, REST API, Redis.
+                        <strong>Back End:</strong> Node.js, Express, Python, Nginx, GraphQL, MongoDB,
+                        PostgreSQL, MySQL, Redis, bcrypt, REST API, GraphQL.
                       </p>
                       <p>
-                        <strong>DevOps & Testing:</strong> AWS EC2, Netlify, Docker, Heroku, Git,
+                        <strong>DevOps & Testing:</strong> AWS EC2, Git, Docker, Netlify, Heroku,
                         Axios, Babel, Webpack, Jest, Enzyme, Mocha, Chai, Loader.io, K6.
                       </p>
                     </strong>
