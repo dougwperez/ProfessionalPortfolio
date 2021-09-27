@@ -49,8 +49,7 @@ const About = () => {
                   <div className="tech-list">
                     <strong>
                       <p>
-                        <strong>Front End:</strong> JavaScript ES6, HTML5, React.js, Redux, React
-                        Native, Gatsby, jQuery, Styled Components, Sass.
+                        <strong>Front End:</strong> React, React Native, Redux, MobX, Gatsby, TypeScript, HTML5, jQuery, Styled Components, Less, Sass.
                       </p>
 
                       <p>
