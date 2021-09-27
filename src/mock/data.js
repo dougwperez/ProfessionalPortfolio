@@ -22,11 +22,11 @@ export const aboutData = {
   paragraphOne:
     'I first started coding Front End applications while quarantining in Wuhan in December 2019, during the first Covid-19 outbreak. During this tense time, I built ESL MiniGames, a suite of engaging, educational games in JavaScript. It was a resounding success that allowed for a more interactive experience over Zoom. From there, my passion for Front End development only grew.',
   paragraphTwo:
-    'Front End: JavaScript ES6, HTML5, React.js, Redux, React Native, Gatsby, jQuery, Styled Components, Sass.',
+    'Front End: React, React Native, Redux, MobX, Gatsby, TypeScript, HTML5, jQuery, Styled Components, Less, Sass.',
   paragraphThree:
-    'Back End: Node.js, Express, Nginx, GraphQL, MongoDB, PostgreSQL, MySQL, SQLite, REST API, Redis.',
+    'Back End: Node.js, Express, Python, MongoDB, Firebase, Nginx, PostgreSQL, MySQL, Redis, bcrypt, REST API, GraphQL.',
   paragraphFour:
-    'DevOps & Testing: AWS EC2, Netlify, Docker, Heroku, Git, Axios, Babel, Webpack, Jest, Enzyme, Mocha, Chai, Loader.io, K6.',
+    'DevOps & Testing: AWS EC2, Git, Docker, Netlify, Axios, Babel, Webpack, Jest, Enzyme, Mocha, Chai, Loader.io, K6.',
   resume: 'https://dougwperez.github.io/Doug-Perez-Resume/', // if no resume, the button will not show up
 };
 
