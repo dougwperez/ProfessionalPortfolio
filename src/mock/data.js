@@ -80,8 +80,8 @@ export const projectsData = [
     info:
       'Built with a dual purpose in mind, Alex4Hope is meant to serve as both a Memorial as well as platform for the organization, which is committed to raising awareness about fentanyl and other illicit substances.',
     info2: '',
-    url: 'https://dougwperez.github.io/Movahedi-memorial/',
-    repo: 'https://github.com/dougwperez/Movahedi-memorial', // if no repo, the button will not show up
+    url: 'https://amazing-noyce-d35a46.netlify.app/',
+    repo: 'https://github.com/dougwperez/react-memorial', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
