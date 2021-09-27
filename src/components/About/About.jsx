@@ -54,7 +54,7 @@ const About = () => {
                       </p>
 
                       <p>
-                        <strong>Back End:</strong> Node.js, Express, Python, Nginx, GraphQL, MongoDB,
+                        <strong>Back End:</strong> Node.js, Express, Python, Flask, Nginx, MongoDB,
                         PostgreSQL, MySQL, Redis, bcrypt, REST API, GraphQL.
                       </p>
                       <p>
