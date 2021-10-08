@@ -6,7 +6,7 @@ import project0Gif from './project0hdupdate.gif';
 import project1Gif from './project1hd.gif';
 import project2Gif from './project2hd.gif';
 import project3Gif from './project3hd.gif';
-import project4Gif from './project4hdupdate.gif';
+import project4Gif from './project4hdupdate.mp4';
 import { useWindowSize, useWindowWidth, useWindowHeight } from '@react-hook/window-size';
 
 const ProjectImg = ({ filename, alt }) => (
