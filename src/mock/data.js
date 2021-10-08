@@ -20,13 +20,13 @@ export const heroData = {
 export const aboutData = {
   img: 'profileXL1.jpg',
   paragraphOne:
-    'I first started coding Front End applications while quarantining in Wuhan in December 2019, during the first Covid-19 outbreak. During this tense time, I built ESL MiniGames, a suite of engaging, educational games in JavaScript. It was a resounding success that allowed for a more interactive experience over Zoom. From there, my passion for Front End development only grew.',
+    'My first foray into full stack development occured while I was trapped in Wuhan.. during the first Covid-19 Outbreak. Urged to evacuate by authorities, I chose to stay in Wuhan with my family and dogs. During which time, I built ESL MiniGames, a suite of educational, engaging and highly interactive JS games that my students loved. Currently, I work at a dynamic SaaS company that helps employees retain workforce training through AI, cognitive science techniques and gamification. I love my work!',
   paragraphTwo:
-    'Front End: JavaScript ES6, HTML5, React.js, Redux, React Native, Gatsby, jQuery, Styled Components, Sass.',
+    'Front End: React, React Native, Redux, MobX, Gatsby, TypeScript, HTML5, jQuery, Styled Components, Less, Sass.',
   paragraphThree:
-    'Back End: Node.js, Express, Nginx, GraphQL, MongoDB, PostgreSQL, MySQL, SQLite, REST API, Redis.',
+    'Back End: Node.js, Express, Python, MongoDB, Firebase, Nginx, PostgreSQL, MySQL, Redis, bcrypt, REST API, GraphQL.',
   paragraphFour:
-    'DevOps & Testing: AWS EC2, Netlify, Docker, Heroku, Git, Axios, Babel, Webpack, Jest, Enzyme, Mocha, Chai, Loader.io, K6.',
+    'DevOps & Testing: AWS EC2, Git, Docker, Netlify, Axios, Babel, Webpack, Jest, Enzyme, Mocha, Chai, Loader.io, K6.',
   resume: 'https://dougwperez.github.io/Doug-Perez-Resume/', // if no resume, the button will not show up
 };
 
@@ -80,8 +80,8 @@ export const projectsData = [
     info:
       'Built with a dual purpose in mind, Alex4Hope is meant to serve as both a Memorial as well as platform for the organization, which is committed to raising awareness about fentanyl and other illicit substances.',
     info2: '',
-    url: 'https://dougwperez.github.io/Movahedi-memorial/',
-    repo: 'https://github.com/dougwperez/Movahedi-memorial', // if no repo, the button will not show up
+    url: 'https://amazing-noyce-d35a46.netlify.app/',
+    repo: 'https://github.com/dougwperez/react-memorial', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
