@@ -49,12 +49,12 @@ const About = () => {
                   <div className="tech-list">
                     <strong>
                       <p>
-                        <strong>Front End:</strong> React, React Native, Redux, MobX, Gatsby, TypeScript, HTML5, 
+                        <strong>Front End:</strong> React, React Native, Next.js, Gatsby, Redux, MobX, JavaScript, TypeScript, HTML5, 
                         jQuery, Less, Sass, Babylon.js, Three.js.
                       </p>
 
                       <p>
-                        <strong>Back End:</strong> Node.js, Express, Python, Flask, Nginx, MongoDB,
+                        <strong>Back End:</strong> Node.js, Express, Python, FastAPI, Nginx, MongoDB,
                         PostgreSQL, MySQL, Redis, bcrypt, REST API, GraphQL.
                       </p>
                       <p>
