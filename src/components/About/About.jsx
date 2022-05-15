@@ -50,7 +50,7 @@ const About = () => {
                     <strong>
                       <p>
                         <strong>Front End:</strong> React, React Native, Next.js, Gatsby, Redux, MobX, JavaScript, TypeScript, HTML5, 
-                        jQuery, Less, Sass, Babylon.js, Three.js.
+                        jQuery, Less, Sass, Three.js.
                       </p>
 
                       <p>
