@@ -59,7 +59,7 @@ const About = () => {
                       </p>
                       <p>
                         <strong>DevOps & Testing:</strong> AWS EC2, Git, Docker, Netlify, Heroku,
-                        Axios, Babel, Webpack, Jest, Enzyme, Mocha, Chai, Loader.io, K6.
+                        Axios, Babel, Webpack, Jest, Enzyme, Mocha, Chai, Selenium, K6.
                       </p>
                     </strong>
                   </div>
