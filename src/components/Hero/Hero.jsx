@@ -62,11 +62,13 @@ const Header = () => {
           style="border:none"
         />
       </div> */}
-      <br />
+// NOTE REMOVE BR BELOW
+//       <br />
 
       <iframe
         width="100%"
-        height="535"
+// NOTE ORIGINAL HEIGHT VALUE WAS 515
+        height="550"
 loading="lazy"
 //  OLD CUBES
 //         src="https://dougwperez.github.io/Tech-Stack-Cubes/"
