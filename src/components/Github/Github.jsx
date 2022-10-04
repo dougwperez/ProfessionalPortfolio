@@ -52,15 +52,15 @@ const Github = () => {
                 }}
               ></iframe>
             </div> */}
-            <GitHubCalendar
-              id="contri"
-              username="dougwperez"
-              blockSize={15}
-              blockMargin={4}
-              fontSize={16}
-            >
+//             <GitHubCalendar
+//               id="contri"
+//               username="dougwperez"
+//               blockSize={15}
+//               blockMargin={4}
+//               fontSize={16}
+//             >
               {/* <ReactTooltip delayShow={50} html /> */}
-            </GitHubCalendar>
+//             </GitHubCalendar>
             <br />
             <br />
             <a
