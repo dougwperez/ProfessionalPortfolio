@@ -1,4 +1,7 @@
 module.exports = {
+  flags: {
+    PARALLEL_QUERY_RUNNING: true,
+  },
   plugins: [
     {
       resolve: 'gatsby-plugin-crisp-chat',
