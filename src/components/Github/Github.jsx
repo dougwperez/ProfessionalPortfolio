@@ -68,7 +68,7 @@ const Github = () => {
               username="dougwperez"
 //               blockSize={15}
 //               blockMargin={4}
-//               fontSize={16}
+              fontSize={0}
             >
               {/* <ReactTooltip delayShow={50} html /> */}
             </GitHubCalendar>
