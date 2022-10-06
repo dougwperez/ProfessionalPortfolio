@@ -63,7 +63,7 @@ const Github = () => {
               {/* <ReactTooltip delayShow={50} html /> */}
             </GitHubCalendar> : 
             <GitHubCalendar
-              style={{ width: '50%', margin: '0 auto' }}
+              style={{ width: '75%', margin: '0 auto' }}
               id="contri"
               username="dougwperez"
 //               blockSize={15}
