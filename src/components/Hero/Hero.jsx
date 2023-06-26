@@ -33,7 +33,7 @@ const Header = () => {
               <br />
               {title || 'Hi, my name is'} <span className="text-color-main">{'Doug Perez,'}</span>
               <br />
-              {subtitle || 'An SF-based React Developer.'}
+                {subtitle || 'An SF-based React Developer.'}
             </h1>
           </Fade>
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
@@ -62,12 +62,16 @@ const Header = () => {
           style="border:none"
         />
       </div> */}
-      <br />
 
       <iframe
         width="100%"
+// NOTE ORIGINAL HEIGHT VALUE WAS 515
         height="515"
-        src="https://dougwperez.github.io/Tech-Stack-Cubes/"
+loading="lazy"
+//  OLD CUBES
+//         src="https://dougwperez.github.io/Tech-Stack-Cubes/"
+//  NEW CUBES
+        src="https://dougwperez.github.io/Tech-Stack-Cubes-2.0/"
         frameborder="0"
         scrolling="no"
       ></iframe>

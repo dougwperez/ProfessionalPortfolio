@@ -52,7 +52,8 @@ const Github = () => {
                 }}
               ></iframe>
             </div> */}
-            <GitHubCalendar
+{isDesktop ? <GitHubCalendar
+              style={{ width: '50%', margin: '0 auto' }}
               id="contri"
               username="dougwperez"
               blockSize={15}
@@ -60,7 +61,7 @@ const Github = () => {
               fontSize={16}
             >
               {/* <ReactTooltip delayShow={50} html /> */}
-            </GitHubCalendar>
+            </GitHubCalendar> : null}
             <br />
             <br />
             <a

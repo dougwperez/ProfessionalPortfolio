@@ -20,7 +20,7 @@ export const heroData = {
 export const aboutData = {
   img: 'profileXL1.jpg',
   paragraphOne:
-    'My first foray into full stack development occured while I was trapped in Wuhan.. during the first Covid-19 Outbreak. Urged to evacuate by authorities, I chose to stay in Wuhan with my family and dogs. During which time, I built ESL MiniGames, a suite of educational, engaging and highly interactive JS games that my students loved. Currently, I work at a dynamic SaaS company that helps employees retain workforce training through AI, cognitive science techniques and gamification. I love my work!',
+    'My first foray into full stack development occured while I was trapped in Wuhan during the first Covid-19 Outbreak. Urged to evacuate by authorities, I chose to stay in Wuhan with my family and dogs. During which time, I built ESL MiniGames, a suite of educational, engaging and highly interactive JS games that my students loved. Currently, I work at a dynamic SaaS company that helps employees retain workforce training through AI, cognitive science techniques and gamification. I love my work!',
   paragraphTwo:
     'Front End: React, React Native, Redux, MobX, Gatsby, TypeScript, HTML5, jQuery, Styled Components, Less, Sass.',
   paragraphThree:
