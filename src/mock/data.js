@@ -40,7 +40,7 @@ export const projectsData = [
       'A custom made E-commerce site that uses a MERN stack framework. The e-store features high-end consumer electronics, PayPal and Visa/Mastercard integration, and user authentication. Users can customize their accounts, make purchases, and leave product reviews. Site architecture relies heavily on Redux.',
     info2: '',
     url: 'https://ecommerce-i5yy.onrender.com/',
-    repo: 'https://github.com/dougwperez/E-Mai-ecommerce', // if no repo, the button will not show up UPDATE NODE t
+    repo: 'https://github.com/dougwperez/E-Mai-ecommerce', // if no repo, the button will not show up UPDATE NODE
   },
   {
     id: nanoid(),
