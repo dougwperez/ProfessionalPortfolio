@@ -38,7 +38,6 @@ const ProjectImg = ({ filename, alt }) => (
       if (!image) return <Img alt={alt} />;
 
       const imageFluid = image.node.childImageSharp.fluid;
-      console.log('width', width);
 
       if (filename === 'project0.jpeg' && width < 740) {
         return (
